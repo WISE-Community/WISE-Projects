@@ -1161,18 +1161,51 @@
                 "canChangePath": null,
                 "maxPathsVisitable": null
             },
-            "title": "Annotator Step",
+            "title": "Label Step",
             "components": [
                 {
-                    "id": "s0ruxplaen",
+                    "id": "x4twq80e2n",
+                    "prompt": "Label the picture.",
                     "type": "Label",
-                    "prompt": "<p>Put the cat in the hat.</p>\n<p>Put the cereal in the bowl.</p>\n<p>Put the trash in the garbage.</p>",
-                    "showSaveButton": false,
-                    "showSubmitButton": false,
-                    "backgroundImage": "annotator_demo.png",
+                    "backgroundImage": "ballon cars and skateboarder.png",
+                    "canCreateLabels": true,
+                    "canDeleteLabels": true,
                     "width": 800,
                     "height": 600,
-                    "labels": []
+                    "labels": [
+                        {
+                            "pointX": 25,
+                            "pointY": 200,
+                            "textX": 100,
+                            "textY": -25,
+                            "text": "more potential energy",
+                            "color": "blue"
+                        },
+                        {
+                            "pointX": 25,
+                            "pointY": 250,
+                            "textX": 100,
+                            "textY": -25,
+                            "text": "more potential energy",
+                            "color": "blue"
+                        },
+                        {
+                            "pointX": 25,
+                            "pointY": 300,
+                            "textX": 100,
+                            "textY": -25,
+                            "text": "more kinetic energy",
+                            "color": "green"
+                        },
+                        {
+                            "pointX": 25,
+                            "pointY": 350,
+                            "textX": 100,
+                            "textY": -25,
+                            "text": "more kinetic energy",
+                            "color": "green"
+                        }
+                    ]
                 }
             ]
         },
