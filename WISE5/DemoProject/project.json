@@ -1228,7 +1228,16 @@
                 "node30",
                 "node31",
                 "node32",
-                "node33"
+                "node33",
+                "node34",
+                "node35",
+                "node36",
+                "node37",
+                "node38",
+                "node39",
+                "node40",
+                "node41",
+                "node42"
             ]
         },
         {
@@ -1523,16 +1532,52 @@
             "transitionLogic": {
                 "transitions": [
                     {
-                        "to": "node31"
+                        "to": "node31",
+                        "criteria": [
+                            {
+                                "functionName": "choiceChosen",
+                                "nodeId": "node29",
+                                "componentId": "qo7zqlxoa1",
+                                "functionParams": {
+                                    "choiceIds": [
+                                        "isqtxst8ah"
+                                    ]
+                                }
+                            }
+                        ]
                     },
                     {
-                        "to": "node32"
+                        "to": "node32",
+                        "criteria": [
+                            {
+                                "functionName": "choiceChosen",
+                                "nodeId": "node29",
+                                "componentId": "qo7zqlxoa1",
+                                "functionParams": {
+                                    "choiceIds": [
+                                        "araznpws0b"
+                                    ]
+                                }
+                            }
+                        ]
                     },
                     {
-                        "to": "node33"
+                        "to": "node33",
+                        "criteria": [
+                            {
+                                "functionName": "choiceChosen",
+                                "nodeId": "node29",
+                                "componentId": "qo7zqlxoa1",
+                                "functionParams": {
+                                    "choiceIds": [
+                                        "fot1t36pcm"
+                                    ]
+                                }
+                            }
+                        ]
                     }
                 ],
-                "howToChooseAmongAvailablePaths": "criteriaMapping",
+                "howToChooseAmongAvailablePaths": null,
                 "whenToChoosePath": "enterNode",
                 "canChangePath": false,
                 "maxPathsVisitable": 1
@@ -1578,7 +1623,11 @@
                 }
             ],
             "transitionLogic": {
-                "transitions": [],
+                "transitions": [
+                    {
+                        "to": "node34"
+                    }
+                ],
                 "howToChooseAmongAvailablePaths": null,
                 "whenToChoosePath": null,
                 "canChangePath": null,
@@ -1625,7 +1674,11 @@
                 }
             ],
             "transitionLogic": {
-                "transitions": [],
+                "transitions": [
+                    {
+                        "to": "node34"
+                    }
+                ],
                 "howToChooseAmongAvailablePaths": null,
                 "whenToChoosePath": null,
                 "canChangePath": null,
@@ -1672,7 +1725,11 @@
                 }
             ],
             "transitionLogic": {
-                "transitions": [],
+                "transitions": [
+                    {
+                        "to": "node34"
+                    }
+                ],
                 "howToChooseAmongAvailablePaths": null,
                 "whenToChoosePath": null,
                 "canChangePath": null,
@@ -1684,6 +1741,393 @@
                     "id": "ycqqha8xn2",
                     "type": "HTML",
                     "html": "<html>\n<head>\n<title>html</title>\n</head>\n<body>\n<p>You chose \"White\" in the multiple choice step. Enjoy your white chocolate!</p>\n<p><img src=\"white_chocolate.jpg?w=265&amp;h=205\" alt=\"\" width=\"265\" height=\"205\" /></p>\n</body>\n</html>"
+                }
+            ]
+        },
+        {
+            "id": "node34",
+            "title": "Branch Point",
+            "type": "node",
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node35"
+                    },
+                    {
+                        "to": "node36"
+                    }
+                ],
+                "howToChooseAmongAvailablePaths": null,
+                "whenToChoosePath": "enterNode",
+                "canChangePath": false,
+                "maxPathsVisitable": null
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": []
+        },
+        {
+            "id": "node35",
+            "title": "Path 1",
+            "type": "node",
+            "constraints": [
+                {
+                    "id": "constraint6",
+                    "action": "makeThisNodeNotVisible",
+                    "targetId": "node35",
+                    "removalCriteria": [
+                        {
+                            "functionName": "branchPathTaken",
+                            "fromNodeId": "node34",
+                            "toNodeId": "node35"
+                        }
+                    ]
+                },
+                {
+                    "id": "constraint7",
+                    "action": "makeThisNodeNotVisitable",
+                    "targetId": "node35",
+                    "removalCriteria": [
+                        {
+                            "functionName": "branchPathTaken",
+                            "fromNodeId": "node34",
+                            "toNodeId": "node35"
+                        }
+                    ]
+                }
+            ],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node37"
+                    }
+                ]
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": []
+        },
+        {
+            "id": "node36",
+            "title": "Path 2",
+            "type": "node",
+            "constraints": [
+                {
+                    "id": "constraint8",
+                    "action": "makeThisNodeNotVisible",
+                    "targetId": "node36",
+                    "removalCriteria": [
+                        {
+                            "functionName": "branchPathTaken",
+                            "fromNodeId": "node34",
+                            "toNodeId": "node36"
+                        }
+                    ]
+                },
+                {
+                    "id": "constraint9",
+                    "action": "makeThisNodeNotVisitable",
+                    "targetId": "node36",
+                    "removalCriteria": [
+                        {
+                            "functionName": "branchPathTaken",
+                            "fromNodeId": "node34",
+                            "toNodeId": "node36"
+                        }
+                    ]
+                }
+            ],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node37"
+                    }
+                ]
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": []
+        },
+        {
+            "id": "node37",
+            "title": "Merge Point",
+            "type": "node",
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node38"
+                    }
+                ]
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": []
+        },
+        {
+            "id": "node38",
+            "title": "Choose your own adventure",
+            "type": "node",
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node39",
+                        "criteria": [
+                            {
+                                "functionName": "choiceChosen",
+                                "nodeId": "node38",
+                                "componentId": "thrnlq36p7",
+                                "functionParams": {
+                                    "choiceIds": [
+                                        "e8q3itsl14"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "to": "node40",
+                        "criteria": [
+                            {
+                                "functionName": "choiceChosen",
+                                "nodeId": "node38",
+                                "componentId": "thrnlq36p7",
+                                "functionParams": {
+                                    "choiceIds": [
+                                        "y62vlw0538"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "to": "node41",
+                        "criteria": [
+                            {
+                                "functionName": "choiceChosen",
+                                "nodeId": "node38",
+                                "componentId": "thrnlq36p7",
+                                "functionParams": {
+                                    "choiceIds": [
+                                        "3gmpujiqbl"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "howToChooseAmongAvailablePaths": null,
+                "whenToChoosePath": "studentDataChanged",
+                "canChangePath": false,
+                "maxPathsVisitable": null
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": [
+                {
+                    "id": "thrnlq36p7",
+                    "type": "MultipleChoice",
+                    "prompt": "There is a ladder that leads up, a door that leads forward, and a rope that leads down. Which one do you choose?",
+                    "showSaveButton": false,
+                    "showSubmitButton": false,
+                    "choiceType": "radio",
+                    "choices": [
+                        {
+                            "id": "e8q3itsl14",
+                            "text": "Ladder Up",
+                            "feedback": "",
+                            "isCorrect": false
+                        },
+                        {
+                            "id": "y62vlw0538",
+                            "text": "Door Forward",
+                            "feedback": "",
+                            "isCorrect": false
+                        },
+                        {
+                            "id": "3gmpujiqbl",
+                            "text": "Rope Down",
+                            "feedback": "",
+                            "isCorrect": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "node39",
+            "title": "Ladder Up",
+            "type": "node",
+            "constraints": [
+                {
+                    "id": "constraint10",
+                    "action": "makeThisNodeNotVisible",
+                    "targetId": "node39",
+                    "removalCriteria": [
+                        {
+                            "functionName": "branchPathTaken",
+                            "fromNodeId": "node38",
+                            "toNodeId": "node39"
+                        }
+                    ]
+                },
+                {
+                    "id": "constraint11",
+                    "action": "makeThisNodeNotVisitable",
+                    "targetId": "node39",
+                    "removalCriteria": [
+                        {
+                            "functionName": "branchPathTaken",
+                            "fromNodeId": "node38",
+                            "toNodeId": "node39"
+                        }
+                    ]
+                }
+            ],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node42"
+                    }
+                ]
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": [
+                {
+                    "id": "6xfqjjqjjk",
+                    "type": "OpenResponse",
+                    "prompt": "You climb the ladder up to the roof. The sun's rays burn you to death.",
+                    "showSaveButton": false,
+                    "showSubmitButton": false,
+                    "starterSentence": null,
+                    "isStudentAttachmentEnabled": false
+                }
+            ]
+        },
+        {
+            "id": "node40",
+            "title": "Door Forward",
+            "type": "node",
+            "constraints": [
+                {
+                    "id": "constraint12",
+                    "action": "makeThisNodeNotVisible",
+                    "targetId": "node40",
+                    "removalCriteria": [
+                        {
+                            "functionName": "branchPathTaken",
+                            "fromNodeId": "node38",
+                            "toNodeId": "node40"
+                        }
+                    ]
+                },
+                {
+                    "id": "constraint13",
+                    "action": "makeThisNodeNotVisitable",
+                    "targetId": "node40",
+                    "removalCriteria": [
+                        {
+                            "functionName": "branchPathTaken",
+                            "fromNodeId": "node38",
+                            "toNodeId": "node40"
+                        }
+                    ]
+                }
+            ],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node42"
+                    }
+                ]
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": [
+                {
+                    "id": "lvhzclp0ae",
+                    "type": "OpenResponse",
+                    "prompt": "You step out of the door and find ice cream. It is delicious. Yum.",
+                    "showSaveButton": false,
+                    "showSubmitButton": false,
+                    "starterSentence": null,
+                    "isStudentAttachmentEnabled": false
+                }
+            ]
+        },
+        {
+            "id": "node41",
+            "title": "Rope Down",
+            "type": "node",
+            "constraints": [
+                {
+                    "id": "constraint14",
+                    "action": "makeThisNodeNotVisible",
+                    "targetId": "node41",
+                    "removalCriteria": [
+                        {
+                            "functionName": "branchPathTaken",
+                            "fromNodeId": "node38",
+                            "toNodeId": "node41"
+                        }
+                    ]
+                },
+                {
+                    "id": "constraint15",
+                    "action": "makeThisNodeNotVisitable",
+                    "targetId": "node41",
+                    "removalCriteria": [
+                        {
+                            "functionName": "branchPathTaken",
+                            "fromNodeId": "node38",
+                            "toNodeId": "node41"
+                        }
+                    ]
+                }
+            ],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node42"
+                    }
+                ]
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": [
+                {
+                    "id": "5cfuu8lte5",
+                    "type": "OpenResponse",
+                    "prompt": "You climb down the rope and fall into outer space. You float through space until you run into the Battlestar Galactica. You kill everyone on the ship because the show sucks.",
+                    "showSaveButton": false,
+                    "showSubmitButton": false,
+                    "starterSentence": null,
+                    "isStudentAttachmentEnabled": false
+                }
+            ]
+        },
+        {
+            "id": "node42",
+            "title": "Another Merge Point",
+            "type": "node",
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": []
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": [
+                {
+                    "id": "mx1sh12uiu",
+                    "type": "OpenResponse",
+                    "prompt": "Game Over.",
+                    "showSaveButton": false,
+                    "showSubmitButton": false,
+                    "starterSentence": null,
+                    "isStudentAttachmentEnabled": false
                 }
             ]
         }
