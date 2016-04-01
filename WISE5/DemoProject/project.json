@@ -1758,7 +1758,7 @@
                         "to": "node36"
                     }
                 ],
-                "howToChooseAmongAvailablePaths": null,
+                "howToChooseAmongAvailablePaths": "workgroupId",
                 "whenToChoosePath": "enterNode",
                 "canChangePath": false,
                 "maxPathsVisitable": null
