@@ -1853,7 +1853,30 @@
             "id": "node37",
             "title": "Merge Point",
             "type": "node",
-            "constraints": [],
+            "constraints": [
+                {
+                    "id": "constraint16",
+                    "action": "makeAllNodesAfterThisNotVisible",
+                    "targetId": "node37",
+                    "removalCriteria": [
+                        {
+                            "functionName": "isVisited",
+                            "nodeId": "node37"
+                        }
+                    ]
+                },
+                {
+                    "id": "constraint17",
+                    "action": "makeAllNodesAfterThisNotVisitable",
+                    "targetId": "node37",
+                    "removalCriteria": [
+                        {
+                            "functionName": "isVisited",
+                            "nodeId": "node37"
+                        }
+                    ]
+                }
+            ],
             "transitionLogic": {
                 "transitions": [
                     {
