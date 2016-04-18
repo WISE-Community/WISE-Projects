@@ -1536,14 +1536,16 @@
                         "to": "node31",
                         "criteria": [
                             {
-                                "functionName": "choiceChosen",
+								"function": {
+									"name": "choiceChosen",
+									"params": {
+	                                    "choiceIds": [
+	                                        "isqtxst8ah"
+	                                    ]										
+									}
+								},								
                                 "nodeId": "node29",
-                                "componentId": "qo7zqlxoa1",
-                                "functionParams": {
-                                    "choiceIds": [
-                                        "isqtxst8ah"
-                                    ]
-                                }
+                                "componentId": "qo7zqlxoa1"
                             }
                         ]
                     },
@@ -1551,14 +1553,16 @@
                         "to": "node32",
                         "criteria": [
                             {
-                                "functionName": "choiceChosen",
+								"function": {
+									"name": "choiceChosen",
+									"params": {
+	                                    "choiceIds": [
+	                                        "araznpws0b"
+	                                    ]										
+									}
+								},																
                                 "nodeId": "node29",
-                                "componentId": "qo7zqlxoa1",
-                                "functionParams": {
-                                    "choiceIds": [
-                                        "araznpws0b"
-                                    ]
-                                }
+                                "componentId": "qo7zqlxoa1"
                             }
                         ]
                     },
@@ -1566,14 +1570,16 @@
                         "to": "node33",
                         "criteria": [
                             {
-                                "functionName": "choiceChosen",
                                 "nodeId": "node29",
                                 "componentId": "qo7zqlxoa1",
-                                "functionParams": {
-                                    "choiceIds": [
-                                        "fot1t36pcm"
-                                    ]
-                                }
+								"function": {
+									"name": "choiceChosen",
+									"params": {
+	                                    "choiceIds": [
+	                                        "fot1t36pcm"
+	                                    ]										
+									}
+								}
                             }
                         ]
                     }
