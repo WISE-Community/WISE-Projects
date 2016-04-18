@@ -7,7 +7,8 @@
             "startId": "group1",
             "ids": [
                 "group1",
-                "group2"
+                "group2",
+                "group3"
             ]
         },
         {
@@ -2153,6 +2154,19 @@
                     "isStudentAttachmentEnabled": false
                 }
             ]
+        },
+        {
+            "id": "group3",
+            "type": "group",
+            "planning": true,
+            "title": "Planning Activity",
+            "startId": "",
+            "ids": [],
+            "availablePlanningNodeIds": [
+            	"node200",
+            	"node201",
+            	"node202"
+            ]
         }
     ],
     "constraints": [],
@@ -2170,5 +2184,109 @@
     },
     "metadata": {
         "title": "Demo Project"
-    }
+    },
+	"planningNodes": [
+        {
+            "id": "node200",
+            "type": "node",
+            "showSaveButton": false,
+            "showSubmitButton": false,
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [],
+                "howToChooseAmongAvailablePaths": null,
+                "whenToChoosePath": null,
+                "canChangePath": null,
+                "maxPathsVisitable": null
+            },
+            "title": "Planning Open Response Step",
+            "components": [
+                {
+                    "id": "8gu9h2d2t1",
+                    "type": "OpenResponse",
+                    "prompt": "<p>This is a step where students enter text.</p>",
+                    "showSaveButton": false,
+                    "showSubmitButton": false
+                }
+            ]
+        },
+        {
+            "id": "node201",
+            "type": "node",
+            "showSaveButton": false,
+            "showSubmitButton": false,
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [],
+                "howToChooseAmongAvailablePaths": null,
+                "whenToChoosePath": null,
+                "canChangePath": null,
+                "maxPathsVisitable": null
+            },
+            "title": "Planning Draw Step",
+            "components": [
+                {
+                    "id": "nje02dvkt4",
+                    "type": "Draw",
+                    "prompt": "<p>This is a step where students draw.</p>",
+                    "showSaveButton": false,
+                    "showSubmitButton": false,
+                    "stamps": {
+                        "Stamps": []
+                    }
+                }
+            ]
+        },
+        {
+            "id": "node202",
+            "type": "node",
+            "showSaveButton": false,
+            "showSubmitButton": false,
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [],
+                "howToChooseAmongAvailablePaths": null,
+                "whenToChoosePath": null,
+                "canChangePath": null,
+                "maxPathsVisitable": null
+            },
+            "title": "Planning Graph Step",
+            "components": [
+                {
+                    "id": "bf2n89o3nv",
+                    "type": "Graph",
+                    "prompt": "<p>This is a step where students graph data.</p>",
+                    "showSaveButton": false,
+                    "showSubmitButton": false,
+                    "title": "Enter graph title here",
+                    "xAxis": {
+                        "title": "Time (seconds)",
+                        "min": 0,
+                        "max": 10
+                    },
+                    "yAxis": {
+                        "title": "Position (meters)",
+                        "min": 0,
+                        "max": 10
+                    },
+                    "series": [
+                        {
+                            "name": "Prediction",
+                            "data": [],
+                            "color": "blue",
+                            "marker": {
+                                "symbol": "circle"
+                            },
+                            "regression": true,
+                            "regressionSettings": {
+                                "type": "linear",
+                                "color": "red"
+                            },
+                            "canEdit": true
+                        }
+                    ]
+                }
+            ]
+        }
+	]
 }
