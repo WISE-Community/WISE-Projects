@@ -2237,6 +2237,7 @@
         {
             "id": "node200",
             "type": "node",
+			"description": "Write predictions.",
             "showSaveButton": false,
             "showSubmitButton": false,
             "constraints": [],
@@ -2272,6 +2273,7 @@
                 "maxPathsVisitable": null
             },
             "title": "Planning Draw Step",
+			"description": "Draw predictions.",
             "components": [
                 {
                     "id": "nje02dvkt4",
@@ -2299,6 +2301,7 @@
                 "maxPathsVisitable": null
             },
             "title": "Planning Graph Step",
+			"description": "Graph predictions.",
             "components": [
                 {
                     "id": "bf2n89o3nv",
