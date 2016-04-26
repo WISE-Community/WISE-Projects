@@ -8,7 +8,8 @@
             "ids": [
                 "group1",
                 "group2",
-                "group3"
+                "group3",
+                "group4"
             ]
         },
         {
@@ -16,6 +17,17 @@
             "type": "group",
             "title": "Example Steps",
             "startId": "node1",
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "group2"
+                    }
+                ],
+                "howToChooseAmongAvailablePaths": null,
+                "whenToChoosePath": null,
+                "canChangePath": null,
+                "maxPathsVisitable": null
+            },
             "ids": [
                 "node1",
                 "node2",
@@ -1215,6 +1227,17 @@
             "type": "group",
             "title": "Example Features",
             "startId": "node20",
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "group3"
+                    }
+                ],
+                "howToChooseAmongAvailablePaths": null,
+                "whenToChoosePath": null,
+                "canChangePath": null,
+                "maxPathsVisitable": null
+            },
             "ids": [
                 "node20",
                 "node21",
@@ -1536,14 +1559,14 @@
                         "to": "node31",
                         "criteria": [
                             {
-								"function": {
-									"name": "choiceChosen",
-									"params": {
-	                                    "choiceIds": [
-	                                        "isqtxst8ah"
-	                                    ]										
-									}
-								},								
+                                "function": {
+                                    "name": "choiceChosen",
+                                    "params": {
+                                        "choiceIds": [
+                                            "isqtxst8ah"
+                                        ]
+                                    }
+                                },
                                 "nodeId": "node29",
                                 "componentId": "qo7zqlxoa1"
                             }
@@ -1553,14 +1576,14 @@
                         "to": "node32",
                         "criteria": [
                             {
-								"function": {
-									"name": "choiceChosen",
-									"params": {
-	                                    "choiceIds": [
-	                                        "araznpws0b"
-	                                    ]										
-									}
-								},																
+                                "function": {
+                                    "name": "choiceChosen",
+                                    "params": {
+                                        "choiceIds": [
+                                            "araznpws0b"
+                                        ]
+                                    }
+                                },
                                 "nodeId": "node29",
                                 "componentId": "qo7zqlxoa1"
                             }
@@ -1572,14 +1595,14 @@
                             {
                                 "nodeId": "node29",
                                 "componentId": "qo7zqlxoa1",
-								"function": {
-									"name": "choiceChosen",
-									"params": {
-	                                    "choiceIds": [
-	                                        "fot1t36pcm"
-	                                    ]										
-									}
-								}
+                                "function": {
+                                    "name": "choiceChosen",
+                                    "params": {
+                                        "choiceIds": [
+                                            "fot1t36pcm"
+                                        ]
+                                    }
+                                }
                             }
                         ]
                     }
@@ -1610,9 +1633,9 @@
                     "targetId": "node31",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "branchPathTaken"
-							},
+                            "function": {
+                                "name": "branchPathTaken"
+                            },
                             "fromNodeId": "node30",
                             "toNodeId": "node31"
                         }
@@ -1624,9 +1647,9 @@
                     "targetId": "node31",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "branchPathTaken"
-							},
+                            "function": {
+                                "name": "branchPathTaken"
+                            },
                             "fromNodeId": "node30",
                             "toNodeId": "node31"
                         }
@@ -1665,9 +1688,9 @@
                     "targetId": "node32",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "branchPathTaken"
-							},
+                            "function": {
+                                "name": "branchPathTaken"
+                            },
                             "fromNodeId": "node30",
                             "toNodeId": "node32"
                         }
@@ -1679,9 +1702,9 @@
                     "targetId": "node32",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "branchPathTaken"
-							},
+                            "function": {
+                                "name": "branchPathTaken"
+                            },
                             "fromNodeId": "node30",
                             "toNodeId": "node32"
                         }
@@ -1720,9 +1743,9 @@
                     "targetId": "node33",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "branchPathTaken"
-							},
+                            "function": {
+                                "name": "branchPathTaken"
+                            },
                             "fromNodeId": "node30",
                             "toNodeId": "node33"
                         }
@@ -1734,9 +1757,9 @@
                     "targetId": "node33",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "branchPathTaken"
-							},
+                            "function": {
+                                "name": "branchPathTaken"
+                            },
                             "fromNodeId": "node30",
                             "toNodeId": "node33"
                         }
@@ -1797,9 +1820,9 @@
                     "targetId": "node35",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "branchPathTaken"
-							},
+                            "function": {
+                                "name": "branchPathTaken"
+                            },
                             "fromNodeId": "node34",
                             "toNodeId": "node35"
                         }
@@ -1811,9 +1834,9 @@
                     "targetId": "node35",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "branchPathTaken"
-							},
+                            "function": {
+                                "name": "branchPathTaken"
+                            },
                             "fromNodeId": "node34",
                             "toNodeId": "node35"
                         }
@@ -1842,9 +1865,9 @@
                     "targetId": "node36",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "branchPathTaken"
-							},
+                            "function": {
+                                "name": "branchPathTaken"
+                            },
                             "fromNodeId": "node34",
                             "toNodeId": "node36"
                         }
@@ -1856,9 +1879,9 @@
                     "targetId": "node36",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "branchPathTaken"
-							},
+                            "function": {
+                                "name": "branchPathTaken"
+                            },
                             "fromNodeId": "node34",
                             "toNodeId": "node36"
                         }
@@ -1887,9 +1910,9 @@
                     "targetId": "node37",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "isVisited"
-							},
+                            "function": {
+                                "name": "isVisited"
+                            },
                             "nodeId": "node37"
                         }
                     ]
@@ -1900,9 +1923,9 @@
                     "targetId": "node37",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "isVisited"
-							},
+                            "function": {
+                                "name": "isVisited"
+                            },
                             "nodeId": "node37"
                         }
                     ]
@@ -1930,14 +1953,14 @@
                         "to": "node39",
                         "criteria": [
                             {
-								"function": {
-									"name": "choiceChosen",
-									"params": {
-	                                    "choiceIds": [
-	                                        "e8q3itsl14"
-	                                    ]										
-									}
-								},								
+                                "function": {
+                                    "name": "choiceChosen",
+                                    "params": {
+                                        "choiceIds": [
+                                            "e8q3itsl14"
+                                        ]
+                                    }
+                                },
                                 "nodeId": "node38",
                                 "componentId": "thrnlq36p7"
                             }
@@ -1947,14 +1970,14 @@
                         "to": "node40",
                         "criteria": [
                             {
-								"function": {
-									"name": "choiceChosen",
-									"params": {
-	                                    "choiceIds": [
-	                                        "y62vlw0538"
-	                                    ]										
-									}
-								},	
+                                "function": {
+                                    "name": "choiceChosen",
+                                    "params": {
+                                        "choiceIds": [
+                                            "y62vlw0538"
+                                        ]
+                                    }
+                                },
                                 "nodeId": "node38",
                                 "componentId": "thrnlq36p7"
                             }
@@ -1964,14 +1987,14 @@
                         "to": "node41",
                         "criteria": [
                             {
-								"function": {
-									"name": "choiceChosen",
-									"params": {
-	                                    "choiceIds": [
-	                                        "3gmpujiqbl"
-	                                    ]										
-									}
-								},	
+                                "function": {
+                                    "name": "choiceChosen",
+                                    "params": {
+                                        "choiceIds": [
+                                            "3gmpujiqbl"
+                                        ]
+                                    }
+                                },
                                 "nodeId": "node38",
                                 "componentId": "thrnlq36p7"
                             }
@@ -2027,9 +2050,9 @@
                     "targetId": "node39",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "branchPathTaken"
-							},	
+                            "function": {
+                                "name": "branchPathTaken"
+                            },
                             "fromNodeId": "node38",
                             "toNodeId": "node39"
                         }
@@ -2041,9 +2064,9 @@
                     "targetId": "node39",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "branchPathTaken"
-							},	
+                            "function": {
+                                "name": "branchPathTaken"
+                            },
                             "fromNodeId": "node38",
                             "toNodeId": "node39"
                         }
@@ -2082,9 +2105,9 @@
                     "targetId": "node40",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "branchPathTaken"
-							},	
+                            "function": {
+                                "name": "branchPathTaken"
+                            },
                             "fromNodeId": "node38",
                             "toNodeId": "node40"
                         }
@@ -2096,9 +2119,9 @@
                     "targetId": "node40",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "branchPathTaken"
-							},	
+                            "function": {
+                                "name": "branchPathTaken"
+                            },
                             "fromNodeId": "node38",
                             "toNodeId": "node40"
                         }
@@ -2137,9 +2160,9 @@
                     "targetId": "node41",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "branchPathTaken"
-							},	
+                            "function": {
+                                "name": "branchPathTaken"
+                            },
                             "fromNodeId": "node38",
                             "toNodeId": "node41"
                         }
@@ -2151,9 +2174,9 @@
                     "targetId": "node41",
                     "removalCriteria": [
                         {
-							"function": {
-								"name": "branchPathTaken"
-							},	
+                            "function": {
+                                "name": "branchPathTaken"
+                            },
                             "fromNodeId": "node38",
                             "toNodeId": "node41"
                         }
@@ -2187,7 +2210,11 @@
             "type": "node",
             "constraints": [],
             "transitionLogic": {
-                "transitions": []
+                "transitions": [
+                    {
+                        "to": "node44"
+                    }
+                ]
             },
             "showSaveButton": true,
             "showSubmitButton": false,
@@ -2208,12 +2235,137 @@
             "type": "group",
             "planning": true,
             "title": "Planning Activity",
-            "startId": "",
-            "ids": [],
-            "availablePlanningNodeIds": [
-            	"node200",
-            	"node201",
-            	"node202"
+            "startId": "node44",
+            "ids": [
+                "node44",
+                "node45"
+            ],
+            "constraints": [
+                {
+                    "id": "constraint15",
+                    "action": "makeAllNodesAfterThisNotVisitable",
+                    "targetId": "group3",
+                    "removalCriteria": [
+                        {
+                            "function": {
+                                "name": "isPlanningActivityCompleted",
+                                "params": {
+                                    "nodeId": "group3",
+                                    "planningStepsCreated": 3,
+                                    "planningStepsCompleted": true
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "group4"
+                    }
+                ],
+                "howToChooseAmongAvailablePaths": null,
+                "whenToChoosePath": null,
+                "canChangePath": null,
+                "maxPathsVisitable": null
+            },
+            "availablePlanningNodes": [
+                {
+                	"nodeId":"node200"
+                },
+                {
+                	"nodeId":"node201"
+                },
+                {
+                	"nodeId":"node202"
+                }
+            ]
+        },
+        {
+            "id": "group4",
+            "type": "group",
+            "title": "Act4",
+            "startId": "node43",
+            "transitionLogic": {
+                "transitions": [],
+                "howToChooseAmongAvailablePaths": null,
+                "whenToChoosePath": null,
+                "canChangePath": null,
+                "maxPathsVisitable": null
+            },
+            "ids": [
+                "node43"
+            ]
+        },
+        {
+            "id": "node43",
+            "title": "Test",
+            "type": "node",
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": []
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": [
+                {
+                    "id": "jq0h5qnask",
+                    "type": "OpenResponse",
+                    "prompt": "Enter prompt here",
+                    "showSaveButton": false,
+                    "showSubmitButton": false,
+                    "starterSentence": null,
+                    "isStudentAttachmentEnabled": false
+                }
+            ]
+        },
+        {
+            "id": "node44",
+            "title": "Kygo",
+            "type": "node",
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node45"
+                    }
+                ]
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": [
+                {
+                    "id": "pf1ztp06jp",
+                    "type": "OpenResponse",
+                    "prompt": "Stay",
+                    "showSaveButton": false,
+                    "showSubmitButton": false,
+                    "starterSentence": null,
+                    "isStudentAttachmentEnabled": false
+                }
+            ]
+        },
+        {
+            "id": "node45",
+            "title": "Flume",
+            "type": "node",
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": []
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": [
+                {
+                    "id": "4pbxkn2o8x",
+                    "type": "OpenResponse",
+                    "prompt": "Mind",
+                    "showSaveButton": false,
+                    "showSubmitButton": false,
+                    "starterSentence": null,
+                    "isStudentAttachmentEnabled": false
+                }
             ]
         }
     ],
@@ -2233,11 +2385,11 @@
     "metadata": {
         "title": "Demo Project"
     },
-	"planningNodes": [
+    "planningNodes": [
         {
             "id": "node200",
             "type": "node",
-			"description": "Write predictions.",
+            "description": "Write predictions.",
             "showSaveButton": false,
             "showSubmitButton": false,
             "constraints": [],
@@ -2273,7 +2425,7 @@
                 "maxPathsVisitable": null
             },
             "title": "Planning Draw Step",
-			"description": "Draw predictions.",
+            "description": "Draw predictions.",
             "components": [
                 {
                     "id": "nje02dvkt4",
@@ -2301,7 +2453,7 @@
                 "maxPathsVisitable": null
             },
             "title": "Planning Graph Step",
-			"description": "Graph predictions.",
+            "description": "Graph predictions.",
             "components": [
                 {
                     "id": "bf2n89o3nv",
@@ -2339,5 +2491,5 @@
                 }
             ]
         }
-	]
+    ]
 }
