@@ -98,7 +98,8 @@
                 {
                     "id": "7edwu1p29b",
                     "type": "OpenResponse",
-                    "prompt": "<p>This is a step where students enter text.</p>"
+                    "prompt": "<p>This is a step where students enter text.</p>",
+                    "maxScore": 5
                 }
             ]
         },
@@ -199,7 +200,8 @@
                     ],
                     "showSaveButton": false,
                     "showSubmitButton": true,
-                    "choiceType": "radio"
+                    "choiceType": "radio",
+                    "maxScore": 2
                 }
             ]
         },
@@ -1559,16 +1561,14 @@
                         "to": "node31",
                         "criteria": [
                             {
-                                "function": {
-                                    "name": "choiceChosen",
-                                    "params": {
-                                        "choiceIds": [
-                                            "isqtxst8ah"
-                                        ]
-                                    }
-                                },
-                                "nodeId": "node29",
-                                "componentId": "qo7zqlxoa1"
+                                "name": "choiceChosen",
+                                "params": {
+									"nodeId": "node29",
+                                	"componentId": "qo7zqlxoa1",
+                                    "choiceIds": [
+                                        "isqtxst8ah"
+                                    ]
+                                }									
                             }
                         ]
                     },
@@ -1576,16 +1576,14 @@
                         "to": "node32",
                         "criteria": [
                             {
-                                "function": {
-                                    "name": "choiceChosen",
-                                    "params": {
-                                        "choiceIds": [
-                                            "araznpws0b"
-                                        ]
-                                    }
-                                },
-                                "nodeId": "node29",
-                                "componentId": "qo7zqlxoa1"
+                                "name": "choiceChosen",
+                                "params": {
+	                                "nodeId": "node29",
+	                                "componentId": "qo7zqlxoa1",
+                                    "choiceIds": [
+                                        "araznpws0b"
+                                    ]
+								}
                             }
                         ]
                     },
@@ -1593,16 +1591,14 @@
                         "to": "node33",
                         "criteria": [
                             {
-                                "nodeId": "node29",
-                                "componentId": "qo7zqlxoa1",
-                                "function": {
-                                    "name": "choiceChosen",
-                                    "params": {
-                                        "choiceIds": [
-                                            "fot1t36pcm"
-                                        ]
-                                    }
-                                }
+                                "name": "choiceChosen",
+                                "params": {
+	                                "nodeId": "node29",
+	                                "componentId": "qo7zqlxoa1",
+                                    "choiceIds": [
+                                        "fot1t36pcm"
+                                    ]
+                                }																
                             }
                         ]
                     }
@@ -1633,11 +1629,11 @@
                     "targetId": "node31",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "branchPathTaken"
-                            },
-                            "fromNodeId": "node30",
-                            "toNodeId": "node31"
+                            "name": "branchPathTaken",
+							"params": {
+								"fromNodeId": "node30",
+								"toNodeId": "node31"									
+							}							
                         }
                     ]
                 },
@@ -1647,11 +1643,11 @@
                     "targetId": "node31",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "branchPathTaken"
-                            },
-                            "fromNodeId": "node30",
-                            "toNodeId": "node31"
+                            "name": "branchPathTaken",
+							"params": {
+								"fromNodeId": "node30",
+								"toNodeId": "node31"									
+							}
                         }
                     ]
                 }
@@ -1688,11 +1684,11 @@
                     "targetId": "node32",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "branchPathTaken"
-                            },
-                            "fromNodeId": "node30",
-                            "toNodeId": "node32"
+                            "name": "branchPathTaken",
+							"params": {
+								"fromNodeId": "node30",
+								"toNodeId": "node32"									
+							}
                         }
                     ]
                 },
@@ -1702,11 +1698,11 @@
                     "targetId": "node32",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "branchPathTaken"
-                            },
-                            "fromNodeId": "node30",
-                            "toNodeId": "node32"
+                            "name": "branchPathTaken",
+							"params": {
+								"fromNodeId": "node30",
+								"toNodeId": "node32"									
+							}
                         }
                     ]
                 }
@@ -1743,11 +1739,11 @@
                     "targetId": "node33",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "branchPathTaken"
-                            },
-                            "fromNodeId": "node30",
-                            "toNodeId": "node33"
+                            "name": "branchPathTaken",
+							"params": {
+								"fromNodeId": "node30",
+								"toNodeId": "node33"									
+							}
                         }
                     ]
                 },
@@ -1757,11 +1753,11 @@
                     "targetId": "node33",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "branchPathTaken"
-                            },
-                            "fromNodeId": "node30",
-                            "toNodeId": "node33"
+                            "name": "branchPathTaken",
+							"params": {
+								"fromNodeId": "node30",
+								"toNodeId": "node33"									
+							}							
                         }
                     ]
                 }
@@ -1820,12 +1816,12 @@
                     "targetId": "node35",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "branchPathTaken"
-                            },
-                            "fromNodeId": "node34",
-                            "toNodeId": "node35"
-                        }
+                            "name": "branchPathTaken",
+							"params": {
+								"fromNodeId": "node34",
+								"toNodeId": "node35"									
+							}
+                        }						
                     ]
                 },
                 {
@@ -1834,12 +1830,12 @@
                     "targetId": "node35",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "branchPathTaken"
-                            },
-                            "fromNodeId": "node34",
-                            "toNodeId": "node35"
-                        }
+                            "name": "branchPathTaken",
+							"params": {
+								"fromNodeId": "node34",
+								"toNodeId": "node35"									
+							}
+                        }						
                     ]
                 }
             ],
@@ -1865,12 +1861,12 @@
                     "targetId": "node36",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "branchPathTaken"
-                            },
-                            "fromNodeId": "node34",
-                            "toNodeId": "node36"
-                        }
+                            "name": "branchPathTaken",
+							"params": {
+								"fromNodeId": "node34",
+								"toNodeId": "node36"									
+							}
+                        }						
                     ]
                 },
                 {
@@ -1879,12 +1875,12 @@
                     "targetId": "node36",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "branchPathTaken"
-                            },
-                            "fromNodeId": "node34",
-                            "toNodeId": "node36"
-                        }
+                            "name": "branchPathTaken",
+							"params": {
+								"fromNodeId": "node34",
+								"toNodeId": "node36"									
+							}
+                        }						
                     ]
                 }
             ],
@@ -1910,10 +1906,10 @@
                     "targetId": "node37",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "isVisited"
-                            },
-                            "nodeId": "node37"
+                            "name": "isVisited",
+							"params": {								
+	                            "nodeId": "node37"
+							}
                         }
                     ]
                 },
@@ -1923,10 +1919,10 @@
                     "targetId": "node37",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "isVisited"
-                            },
-                            "nodeId": "node37"
+                            "name": "isVisited",
+							"params": {								
+	                            "nodeId": "node37"
+							}
                         }
                     ]
                 }
@@ -1953,16 +1949,14 @@
                         "to": "node39",
                         "criteria": [
                             {
-                                "function": {
-                                    "name": "choiceChosen",
-                                    "params": {
-                                        "choiceIds": [
-                                            "e8q3itsl14"
-                                        ]
-                                    }
-                                },
-                                "nodeId": "node38",
-                                "componentId": "thrnlq36p7"
+                                "name": "choiceChosen",
+                                "params": {
+									"nodeId": "node38",
+									"componentId": "thrnlq36p7",
+                                    "choiceIds": [
+                                        "e8q3itsl14"
+                                    ]
+                                }
                             }
                         ]
                     },
@@ -1970,16 +1964,14 @@
                         "to": "node40",
                         "criteria": [
                             {
-                                "function": {
-                                    "name": "choiceChosen",
-                                    "params": {
-                                        "choiceIds": [
-                                            "y62vlw0538"
-                                        ]
-                                    }
-                                },
-                                "nodeId": "node38",
-                                "componentId": "thrnlq36p7"
+                                "name": "choiceChosen",
+                                "params": {
+	                                "nodeId": "node38",
+	                                "componentId": "thrnlq36p7",
+                                    "choiceIds": [
+                                        "y62vlw0538"
+                                    ]
+                                }								
                             }
                         ]
                     },
@@ -1987,16 +1979,14 @@
                         "to": "node41",
                         "criteria": [
                             {
-                                "function": {
-                                    "name": "choiceChosen",
-                                    "params": {
-                                        "choiceIds": [
-                                            "3gmpujiqbl"
-                                        ]
-                                    }
-                                },
-                                "nodeId": "node38",
-                                "componentId": "thrnlq36p7"
+                                "name": "choiceChosen",
+                                "params": {
+	                                "nodeId": "node38",
+	                                "componentId": "thrnlq36p7",										
+                                    "choiceIds": [
+                                        "3gmpujiqbl"
+                                    ]
+                                }
                             }
                         ]
                     }
@@ -2050,12 +2040,12 @@
                     "targetId": "node39",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "branchPathTaken"
-                            },
-                            "fromNodeId": "node38",
-                            "toNodeId": "node39"
-                        }
+                            "name": "branchPathTaken",
+							"params": {
+								"fromNodeId": "node38",
+								"toNodeId": "node39"									
+							}
+                        }						
                     ]
                 },
                 {
@@ -2064,12 +2054,13 @@
                     "targetId": "node39",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "branchPathTaken"
-                            },
-                            "fromNodeId": "node38",
-                            "toNodeId": "node39"
-                        }
+                            "name": "branchPathTaken",
+							"params": {
+								"fromNodeId": "node38",
+								"toNodeId": "node39"									
+							}
+							
+                        }						
                     ]
                 }
             ],
@@ -2105,12 +2096,12 @@
                     "targetId": "node40",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "branchPathTaken"
-                            },
-                            "fromNodeId": "node38",
-                            "toNodeId": "node40"
-                        }
+                            "name": "branchPathTaken",
+							"params": {
+								"fromNodeId": "node38",
+								"toNodeId": "node40"									
+							}
+                        }						
                     ]
                 },
                 {
@@ -2119,12 +2110,12 @@
                     "targetId": "node40",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "branchPathTaken"
-                            },
-                            "fromNodeId": "node38",
-                            "toNodeId": "node40"
-                        }
+                            "name": "branchPathTaken",
+							"params": {
+								"fromNodeId": "node38",
+								"toNodeId": "node40"									
+							}
+                        }						
                     ]
                 }
             ],
@@ -2160,12 +2151,12 @@
                     "targetId": "node41",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "branchPathTaken"
-                            },
-                            "fromNodeId": "node38",
-                            "toNodeId": "node41"
-                        }
+                            "name": "branchPathTaken",
+							"params": {
+								"fromNodeId": "node38",
+								"toNodeId": "node41"									
+							}
+                        }						
                     ]
                 },
                 {
@@ -2174,12 +2165,12 @@
                     "targetId": "node41",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "branchPathTaken"
-                            },
-                            "fromNodeId": "node38",
-                            "toNodeId": "node41"
-                        }
+                            "name": "branchPathTaken",
+							"params": {
+								"fromNodeId": "node38",
+								"toNodeId": "node41"									
+							}
+                        }						
                     ]
                 }
             ],
@@ -2247,13 +2238,11 @@
                     "targetId": "group3",
                     "removalCriteria": [
                         {
-                            "function": {
-                                "name": "isPlanningActivityCompleted",
-                                "params": {
-                                    "nodeId": "group3",
-                                    "planningStepsCreated": 3,
-                                    "planningStepsCompleted": true
-                                }
+                            "name": "isPlanningActivityCompleted",
+                            "params": {
+                                "nodeId": "group3",
+                                "planningStepsCreated": 3,
+                                "planningStepsCompleted": true
                             }
                         }
                     ]
@@ -2488,6 +2477,59 @@
                             "canEdit": true
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "id": "node203",
+            "type": "node",
+            "description": "Write predictions 2.",
+            "showSaveButton": false,
+            "showSubmitButton": false,
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [],
+                "howToChooseAmongAvailablePaths": null,
+                "whenToChoosePath": null,
+                "canChangePath": null,
+                "maxPathsVisitable": null
+            },
+            "title": "Planning Open Response Step 2",
+            "components": [
+                {
+                    "id": "xkfouecha2",
+                    "type": "OpenResponse",
+                    "prompt": "<p>This is a step where students enter text.</p>",
+                    "showSaveButton": false,
+                    "showSubmitButton": false
+                }
+            ]
+        },
+        {
+            "id": "node204",
+            "type": "node",
+            "showSaveButton": false,
+            "showSubmitButton": false,
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [],
+                "howToChooseAmongAvailablePaths": null,
+                "whenToChoosePath": null,
+                "canChangePath": null,
+                "maxPathsVisitable": null
+            },
+            "title": "Planning Draw Step 2",
+            "description": "Draw predictions 2.",
+            "components": [
+                {
+                    "id": "acoda2ch82",
+                    "type": "Draw",
+                    "prompt": "<p>This is a step where students draw.</p>",
+                    "showSaveButton": false,
+                    "showSubmitButton": false,
+                    "stamps": {
+                        "Stamps": []
+                    }
                 }
             ]
         }
