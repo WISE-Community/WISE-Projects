@@ -1613,7 +1613,7 @@
                 {
                     "id": "9ppjsfsmzb",
                     "type": "OpenResponse",
-                    "prompt": "<p>You should see a pie graph with the aggregate student data for the class above.</p>"
+                    "prompt": "<p>You should see a pie graph with the aggregate student data for the class above. Actually, you won't see anything here. Just go to the next step.</p>"
                 }
             ]
         },
@@ -1803,7 +1803,13 @@
             },
             "showSaveButton": true,
             "showSubmitButton": false,
-            "components": []
+            "components": [
+                {
+                    "id": "2d38j20dj4",
+                    "type": "HTML",
+                    "html": "<html>\n<head>\n<title>html</title>\n</head>\n<body>\n<p>You have been randomly assigned to a path based on your workgroup id. The next step will be the first step in the branch path.</p></body>\n</html>"
+                }
+            ]
         },
         {
             "id": "node35",
@@ -1848,7 +1854,13 @@
             },
             "showSaveButton": true,
             "showSubmitButton": false,
-            "components": []
+            "components": [
+                {
+                    "id": "d3ej2hdjb4",
+                    "type": "HTML",
+                    "html": "<html>\n<head>\n<title>html</title>\n</head>\n<body>\n<p>You have gone down Path 1.</p></body>\n</html>"
+                }
+            ]
         },
         {
             "id": "node36",
@@ -1893,7 +1905,13 @@
             },
             "showSaveButton": true,
             "showSubmitButton": false,
-            "components": []
+            "components": [
+                {
+                    "id": "f8t3tj0ds9",
+                    "type": "HTML",
+                    "html": "<html>\n<head>\n<title>html</title>\n</head>\n<body>\n<p>You have gone down Path 2.</p></body>\n</html>"
+                }
+            ]
         },
         {
             "id": "node37",
@@ -1936,7 +1954,13 @@
             },
             "showSaveButton": true,
             "showSubmitButton": false,
-            "components": []
+            "components": [
+                {
+                    "id": "f18t398gh9",
+                    "type": "HTML",
+                    "html": "<html>\n<head>\n<title>html</title>\n</head>\n<body>\n<p>You have reached the step where the paths merge back together.</p></body>\n</html>"
+                }
+            ]
         },
         {
             "id": "node38",
@@ -2201,11 +2225,7 @@
             "type": "node",
             "constraints": [],
             "transitionLogic": {
-                "transitions": [
-                    {
-                        "to": "node44"
-                    }
-                ]
+                "transitions": []
             },
             "showSaveButton": true,
             "showSubmitButton": false,
@@ -2213,7 +2233,7 @@
                 {
                     "id": "mx1sh12uiu",
                     "type": "OpenResponse",
-                    "prompt": "Game Over.",
+                    "prompt": "Game Over.<br/>Now work on the Planning Activity. <wiselink nodeid='group3' linktext='Go to Planning Activity' type='button'>",
                     "showSaveButton": false,
                     "showSubmitButton": false,
                     "starterSentence": null,
@@ -2301,7 +2321,7 @@
                 {
                     "id": "jq0h5qnask",
                     "type": "OpenResponse",
-                    "prompt": "Enter prompt here",
+                    "prompt": "Good job, you completed the Planning Activity.",
                     "showSaveButton": false,
                     "showSubmitButton": false,
                     "starterSentence": null,
