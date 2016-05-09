@@ -701,6 +701,59 @@
                     "id": "9qwqc5uslq",
                     "type": "Draw",
                     "prompt": "<p>This is a draw step where the student can draw a diagram.</p>",
+                    "showSaveButton": false,
+                    "showSubmitButton": true,
+                    "stamps": {
+                        "Stamps": []
+                    }
+                },
+                {
+                    "id": "u8pjamq46o",
+                    "type": "Draw",
+                    "prompt": "This draw component imports work from the draw component above.",
+                    "connectedComponents": [
+                        {
+                            "id": "9qwqc5uslq",
+                            "updateOnlyOnSubmit": true,
+                            "includeBackground": false
+                        }
+                    ],
+                    "showSaveButton": false,
+                    "showSubmitButton": true,
+                    "stamps": {
+                        "Stamps": []
+                    }
+                },
+                {
+                    "id": "kbhwcw717k",
+                    "type": "Draw",
+                    "prompt": "This draw component imports work from the draw component above.",
+                    "connectedComponents": [
+                        {
+                            "id": "u8pjamq46o",
+                            "updateOnlyOnSubmit": true,
+                            "includeBackground": false
+                        }
+                    ],
+                    "showSaveButton": false,
+                    "showSubmitButton": true,
+                    "stamps": {
+                        "Stamps": []
+                    }
+                },
+                {
+                    "id": "vjhhbc1wzj",
+                    "type": "Draw",
+                    "prompt": "This draw component imports work from the draw component above.",
+                    "connectedComponents": [
+                        {
+                            "id": "kbhwcw717k",
+                            "updateOnlyOnSubmit": true,
+                            "includeBackground": false
+                        }
+                    ],
+                    "showSaveButton": false,
+                    "showSubmitButton": true,
                     "stamps": {
                         "Stamps": []
                     }
