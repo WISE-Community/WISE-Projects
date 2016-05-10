@@ -948,19 +948,7 @@
                                 "size": null
                             },
                             {
-                                "text": "0",
-                                "editable": true,
-                                "size": null
-                            }
-                        ],
-                        [
-                            {
-                                "text": "1",
-                                "editable": true,
-                                "size": null
-                            },
-                            {
-                                "text": "1",
+                                "text": "",
                                 "editable": true,
                                 "size": null
                             }
@@ -972,47 +960,105 @@
                                 "size": null
                             },
                             {
-                                "text": "2",
+                                "text": "",
                                 "editable": true,
                                 "size": null
                             }
                         ],
                         [
                             {
-                                "text": "3",
+                                "text": "4",
                                 "editable": true,
                                 "size": null
                             },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            }
+                        ],
+                        [
                             {
                                 "text": "6",
                                 "editable": true,
                                 "size": null
-                            }
-                        ],
-                        [
-                            {
-                                "text": "7",
-                                "editable": true,
-                                "size": null
                             },
                             {
-                                "text": "4",
+                                "text": "",
                                 "editable": true,
                                 "size": null
                             }
                         ],
                         [
                             {
-                                "text": "10",
+                                "text": "8",
                                 "editable": true,
                                 "size": null
                             },
                             {
-                                "text": "4",
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            }
+                        ],
+                        [
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
                                 "editable": true,
                                 "size": null
                             }
                         ]
+                    ]
+                },
+                {
+                    "id": "70qjdqh8mj",
+                    "type": "Graph",
+                    "prompt": "Enter prompt here",
+                    "connectedComponents": [
+                        {
+                            "id": "wtw3q7peip",
+                            "seriesIndex": 0,
+                            "skipFirstRow": true,
+                            "xColumn": 0,
+                            "yColumn": 1
+                        }
+                    ],
+                    "showSaveButton": false,
+                    "showSubmitButton": false,
+                    "title": "Enter graph title here",
+                    "width": 800,
+                    "height": 500,
+                    "xAxis": {
+                        "title": {
+                            "text": "Time (seconds)"
+                        },
+                        "min": 0,
+                        "max": 10
+                    },
+                    "yAxis": {
+                        "title": {
+                            "text": "Position (meters)"
+                        },
+                        "min": 0,
+                        "max": 10
+                    },
+                    "series": [
+                        {
+                            "name": "Prediction",
+                            "data": [],
+                            "color": "blue",
+                            "marker": {
+                                "symbol": "circle"
+                            },
+                            "regression": false,
+                            "regressionSettings": {},
+                            "canEdit": true
+                        }
                     ]
                 },
                 {
@@ -1616,12 +1662,12 @@
                             {
                                 "name": "choiceChosen",
                                 "params": {
-									"nodeId": "node29",
-                                	"componentId": "qo7zqlxoa1",
+                                    "nodeId": "node29",
+                                    "componentId": "qo7zqlxoa1",
                                     "choiceIds": [
                                         "isqtxst8ah"
                                     ]
-                                }									
+                                }
                             }
                         ]
                     },
@@ -1631,12 +1677,12 @@
                             {
                                 "name": "choiceChosen",
                                 "params": {
-	                                "nodeId": "node29",
-	                                "componentId": "qo7zqlxoa1",
+                                    "nodeId": "node29",
+                                    "componentId": "qo7zqlxoa1",
                                     "choiceIds": [
                                         "araznpws0b"
                                     ]
-								}
+                                }
                             }
                         ]
                     },
@@ -1646,12 +1692,12 @@
                             {
                                 "name": "choiceChosen",
                                 "params": {
-	                                "nodeId": "node29",
-	                                "componentId": "qo7zqlxoa1",
+                                    "nodeId": "node29",
+                                    "componentId": "qo7zqlxoa1",
                                     "choiceIds": [
                                         "fot1t36pcm"
                                     ]
-                                }																
+                                }
                             }
                         ]
                     }
@@ -1683,10 +1729,10 @@
                     "removalCriteria": [
                         {
                             "name": "branchPathTaken",
-							"params": {
-								"fromNodeId": "node30",
-								"toNodeId": "node31"									
-							}							
+                            "params": {
+                                "fromNodeId": "node30",
+                                "toNodeId": "node31"
+                            }
                         }
                     ]
                 },
@@ -1697,10 +1743,10 @@
                     "removalCriteria": [
                         {
                             "name": "branchPathTaken",
-							"params": {
-								"fromNodeId": "node30",
-								"toNodeId": "node31"									
-							}
+                            "params": {
+                                "fromNodeId": "node30",
+                                "toNodeId": "node31"
+                            }
                         }
                     ]
                 }
@@ -1738,10 +1784,10 @@
                     "removalCriteria": [
                         {
                             "name": "branchPathTaken",
-							"params": {
-								"fromNodeId": "node30",
-								"toNodeId": "node32"									
-							}
+                            "params": {
+                                "fromNodeId": "node30",
+                                "toNodeId": "node32"
+                            }
                         }
                     ]
                 },
@@ -1752,10 +1798,10 @@
                     "removalCriteria": [
                         {
                             "name": "branchPathTaken",
-							"params": {
-								"fromNodeId": "node30",
-								"toNodeId": "node32"									
-							}
+                            "params": {
+                                "fromNodeId": "node30",
+                                "toNodeId": "node32"
+                            }
                         }
                     ]
                 }
@@ -1793,10 +1839,10 @@
                     "removalCriteria": [
                         {
                             "name": "branchPathTaken",
-							"params": {
-								"fromNodeId": "node30",
-								"toNodeId": "node33"									
-							}
+                            "params": {
+                                "fromNodeId": "node30",
+                                "toNodeId": "node33"
+                            }
                         }
                     ]
                 },
@@ -1807,10 +1853,10 @@
                     "removalCriteria": [
                         {
                             "name": "branchPathTaken",
-							"params": {
-								"fromNodeId": "node30",
-								"toNodeId": "node33"									
-							}							
+                            "params": {
+                                "fromNodeId": "node30",
+                                "toNodeId": "node33"
+                            }
                         }
                     ]
                 }
@@ -1876,11 +1922,11 @@
                     "removalCriteria": [
                         {
                             "name": "branchPathTaken",
-							"params": {
-								"fromNodeId": "node34",
-								"toNodeId": "node35"									
-							}
-                        }						
+                            "params": {
+                                "fromNodeId": "node34",
+                                "toNodeId": "node35"
+                            }
+                        }
                     ]
                 },
                 {
@@ -1890,11 +1936,11 @@
                     "removalCriteria": [
                         {
                             "name": "branchPathTaken",
-							"params": {
-								"fromNodeId": "node34",
-								"toNodeId": "node35"									
-							}
-                        }						
+                            "params": {
+                                "fromNodeId": "node34",
+                                "toNodeId": "node35"
+                            }
+                        }
                     ]
                 }
             ],
@@ -1927,11 +1973,11 @@
                     "removalCriteria": [
                         {
                             "name": "branchPathTaken",
-							"params": {
-								"fromNodeId": "node34",
-								"toNodeId": "node36"									
-							}
-                        }						
+                            "params": {
+                                "fromNodeId": "node34",
+                                "toNodeId": "node36"
+                            }
+                        }
                     ]
                 },
                 {
@@ -1941,11 +1987,11 @@
                     "removalCriteria": [
                         {
                             "name": "branchPathTaken",
-							"params": {
-								"fromNodeId": "node34",
-								"toNodeId": "node36"									
-							}
-                        }						
+                            "params": {
+                                "fromNodeId": "node34",
+                                "toNodeId": "node36"
+                            }
+                        }
                     ]
                 }
             ],
@@ -1978,9 +2024,9 @@
                     "removalCriteria": [
                         {
                             "name": "isVisited",
-							"params": {								
-	                            "nodeId": "node37"
-							}
+                            "params": {
+                                "nodeId": "node37"
+                            }
                         }
                     ]
                 },
@@ -1991,9 +2037,9 @@
                     "removalCriteria": [
                         {
                             "name": "isVisited",
-							"params": {								
-	                            "nodeId": "node37"
-							}
+                            "params": {
+                                "nodeId": "node37"
+                            }
                         }
                     ]
                 }
@@ -2028,8 +2074,8 @@
                             {
                                 "name": "choiceChosen",
                                 "params": {
-									"nodeId": "node38",
-									"componentId": "thrnlq36p7",
+                                    "nodeId": "node38",
+                                    "componentId": "thrnlq36p7",
                                     "choiceIds": [
                                         "e8q3itsl14"
                                     ]
@@ -2043,12 +2089,12 @@
                             {
                                 "name": "choiceChosen",
                                 "params": {
-	                                "nodeId": "node38",
-	                                "componentId": "thrnlq36p7",
+                                    "nodeId": "node38",
+                                    "componentId": "thrnlq36p7",
                                     "choiceIds": [
                                         "y62vlw0538"
                                     ]
-                                }								
+                                }
                             }
                         ]
                     },
@@ -2058,8 +2104,8 @@
                             {
                                 "name": "choiceChosen",
                                 "params": {
-	                                "nodeId": "node38",
-	                                "componentId": "thrnlq36p7",										
+                                    "nodeId": "node38",
+                                    "componentId": "thrnlq36p7",
                                     "choiceIds": [
                                         "3gmpujiqbl"
                                     ]
@@ -2118,11 +2164,11 @@
                     "removalCriteria": [
                         {
                             "name": "branchPathTaken",
-							"params": {
-								"fromNodeId": "node38",
-								"toNodeId": "node39"									
-							}
-                        }						
+                            "params": {
+                                "fromNodeId": "node38",
+                                "toNodeId": "node39"
+                            }
+                        }
                     ]
                 },
                 {
@@ -2132,12 +2178,11 @@
                     "removalCriteria": [
                         {
                             "name": "branchPathTaken",
-							"params": {
-								"fromNodeId": "node38",
-								"toNodeId": "node39"									
-							}
-							
-                        }						
+                            "params": {
+                                "fromNodeId": "node38",
+                                "toNodeId": "node39"
+                            }
+                        }
                     ]
                 }
             ],
@@ -2174,11 +2219,11 @@
                     "removalCriteria": [
                         {
                             "name": "branchPathTaken",
-							"params": {
-								"fromNodeId": "node38",
-								"toNodeId": "node40"									
-							}
-                        }						
+                            "params": {
+                                "fromNodeId": "node38",
+                                "toNodeId": "node40"
+                            }
+                        }
                     ]
                 },
                 {
@@ -2188,11 +2233,11 @@
                     "removalCriteria": [
                         {
                             "name": "branchPathTaken",
-							"params": {
-								"fromNodeId": "node38",
-								"toNodeId": "node40"									
-							}
-                        }						
+                            "params": {
+                                "fromNodeId": "node38",
+                                "toNodeId": "node40"
+                            }
+                        }
                     ]
                 }
             ],
@@ -2229,11 +2274,11 @@
                     "removalCriteria": [
                         {
                             "name": "branchPathTaken",
-							"params": {
-								"fromNodeId": "node38",
-								"toNodeId": "node41"									
-							}
-                        }						
+                            "params": {
+                                "fromNodeId": "node38",
+                                "toNodeId": "node41"
+                            }
+                        }
                     ]
                 },
                 {
@@ -2243,11 +2288,11 @@
                     "removalCriteria": [
                         {
                             "name": "branchPathTaken",
-							"params": {
-								"fromNodeId": "node38",
-								"toNodeId": "node41"									
-							}
-                        }						
+                            "params": {
+                                "fromNodeId": "node38",
+                                "toNodeId": "node41"
+                            }
+                        }
                     ]
                 }
             ],
@@ -2334,13 +2379,13 @@
             },
             "availablePlanningNodes": [
                 {
-                	"nodeId":"node200"
+                    "nodeId": "node200"
                 },
                 {
-                	"nodeId":"node201"
+                    "nodeId": "node201"
                 },
                 {
-                	"nodeId":"node202"
+                    "nodeId": "node202"
                 }
             ]
         },
