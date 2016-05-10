@@ -927,6 +927,15 @@
                     "id": "wtw3q7peip",
                     "type": "Table",
                     "prompt": "The table step can be authored to allow the student to graph the table data. Here is an example of using the table data to create a line graph. I have authored the step to pre-populate the table data so all you need to do is click \"Make Graph\".",
+                    "connectedComponents": [
+                        {
+                            "id": "70qjdqh8mj",
+                            "seriesIndex": 0,
+                            "skipFirstRow": true,
+                            "xColumn": 0,
+                            "yColumn": 1
+                        }
+                    ],
                     "globalCellSize": 10,
                     "tableData": [
                         [
