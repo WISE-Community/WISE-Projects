@@ -99,7 +99,9 @@
                     "id": "7edwu1p29b",
                     "type": "OpenResponse",
                     "prompt": "<p>This is a step where students enter text.</p>",
-                    "maxScore": 5
+                    "maxScore": 5,
+                    "showSaveButton": true,
+                    "showSubmitButton": true
                 }
             ]
         },
@@ -714,7 +716,7 @@
                     "connectedComponents": [
                         {
                             "id": "9qwqc5uslq",
-                            "updateOnlyOnSubmit": true,
+                            "updateOn": "submit",
                             "includeBackground": false
                         }
                     ],
@@ -731,7 +733,7 @@
                     "connectedComponents": [
                         {
                             "id": "u8pjamq46o",
-                            "updateOnlyOnSubmit": true,
+                            "updateOn": "submit",
                             "includeBackground": false
                         }
                     ],
@@ -748,7 +750,7 @@
                     "connectedComponents": [
                         {
                             "id": "kbhwcw717k",
-                            "updateOnlyOnSubmit": true,
+                            "updateOn": "submit",
                             "includeBackground": false
                         }
                     ],
@@ -844,6 +846,8 @@
                 {
                     "id": "y45mn2k7yl",
                     "type": "Table",
+                    "showSaveButton": true,
+                    "showSubmitButton": true,
                     "prompt": "This is a table step where students fill out a table. You can make certain cells editable and other cells uneditable so the student can't change them. You can also allow the student to add/delete columns as well as add/delete rows.",
                     "globalCellSize": 10,
                     "tableData": [
@@ -901,6 +905,71 @@
                     "id": "d9ioo01pa1",
                     "type": "OpenResponse",
                     "prompt": ""
+                },
+                {
+                    "id": "d50rqyytav",
+                    "type": "Table",
+                    "showSaveButton": true,
+                    "showSubmitButton": true,
+                    "connectedComponents": [
+                        {
+                            "id": "y45mn2k7yl",
+                            "updateOn": "submit"
+                        }
+                    ],
+                    "globalCellSize": 10,
+                    "numRows": 4,
+                    "numColumns": 2,
+                    "tableData": [
+                        [
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            }
+                        ],
+                        [
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            }
+                        ],
+                        [
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            }
+                        ],
+                        [
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            }
+                        ]
+                    ]
                 }
             ]
         },
