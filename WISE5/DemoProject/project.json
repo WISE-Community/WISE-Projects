@@ -850,6 +850,8 @@
                     "showSubmitButton": true,
                     "prompt": "This is a table step where students fill out a table. You can make certain cells editable and other cells uneditable so the student can't change them. You can also allow the student to add/delete columns as well as add/delete rows.",
                     "globalCellSize": 10,
+                    "numRows": 4,
+                    "numColumns": 2,
                     "tableData": [
                         [
                             {
@@ -958,6 +960,193 @@
                             }
                         ],
                         [
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "id": "d628e462h1",
+                    "type": "Table",
+                    "showSaveButton": false,
+                    "showSubmitButton": false,
+                    "globalCellSize": 20,
+                    "numRows": 8,
+                    "numColumns": 4,
+                    "tableData": [
+                        [
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            }
+                        ],
+                        [
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            }
+                        ],
+                        [
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            }
+                        ],
+                        [
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            }
+                        ],
+                        [
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            }
+                        ],
+                        [
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            }
+                        ],
+                        [
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            }
+                        ],
+                        [
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
+                            {
+                                "text": "",
+                                "editable": true,
+                                "size": null
+                            },
                             {
                                 "text": "",
                                 "editable": true,
