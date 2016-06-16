@@ -47,7 +47,8 @@
                 "node16",
                 "node17",
                 "node18",
-                "node19"
+                "node19",
+                "node46"
             ]
         },
         {
@@ -1534,7 +1535,7 @@
             "transitionLogic": {
                 "transitions": [
                     {
-                        "to": "node20"
+                        "to": "node46"
                     }
                 ],
                 "howToChooseAmongAvailablePaths": null,
@@ -2741,6 +2742,76 @@
                     "isStudentAttachmentEnabled": false
                 }
             ]
+        },
+        {
+            "id": "node46",
+            "title": "CRater",
+            "type": "node",
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node20"
+                    }
+                ]
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": [
+                {
+                    "id": "znco1zpt4n",
+                    "type": "OpenResponse",
+                    "prompt": "GREENROOF-II\n<br/><br/>\n5 points\n<br/>\nThe plants get the light energy from the sun and transform the energy to a new kind of energy called chemical energy. Also carbon dioxide, water, and the light energy come together and make the plants food, a sugar named glucose. They say that glucose is so energy rich because the light energy that was turned into chemical energy can be stored int the glucose for later and thats why these people have plants growing on there roof.\n<br/><br/>\n4 points\n<br/>\nThe energy comes from the sun and the energy transfers from place to place by bouncing off one another. The energy goes into the plant and is stored and is stored as chemical energy. Energy changes from light energy to chemical energy by the other energy's together..\n<br/><br/>\n3 points\n<br/>\nenergy comes from pre-existing energy that transforms, energy is stored in molecules. Energy explodes and the chemicals inside change.\n<br/><br/>\n2 points\n<br/>\nit would lower the energy use because it goes t the plants before it gets to the building\n<br/><br/>\n1 point\n<br/>\nhello",
+                    "showSaveButton": false,
+                    "showSubmitButton": true,
+                    "starterSentence": null,
+                    "isStudentAttachmentEnabled": false,
+                    "maxScore": 5,
+                    "cRater": {
+                        "itemType": "HENRY",
+                        "itemId": "GREENROOF-II",
+                        "scoreOn": "submit",
+                        "scoringRules": [
+                            {
+                                "concepts": "1",
+                                "score": "1",
+                                "feedbackText": "<br>{{studentFirstNames}}, redo.<br><br> Think about the Sun’s rays. Where do they go? How do they move? Check out <a onclick=\"view.goToStep(' 2.1')\">here</a> for a hint. Then, rewrite your story below.",
+                                "studentAction": "revise"
+                            },
+                            {
+                                "concepts": "2",
+                                "score": "2",
+                                "feedbackText": "<br>{{studentFirstNames}}, expand your story. <br><br>How does the energy change inside the chloroplast? Check out <a onclick=\"view.goToStep('3.2')\">here</a> for a hint. Then, revise your story below.",
+                                "studentAction": "revise"
+                            },
+                            {
+                                "concepts": "3",
+                                "score": "3",
+                                "feedbackText": "<br>{{studentFirstNames}}, expand your story.<br><br>How does the energy change inside the chloroplast? Check out <a onclick=\"view.goToStep('3.2')\">here</a> for a hint. Then, revise your story below.",
+                                "studentAction": "revise"
+                            },
+                            {
+                                "concepts": "4",
+                                "score": "4",
+                                "feedbackText": "<br>{{studentFirstNames}}, good progress. Now expand your story. <br><br>Why are the plants important - what would happen to sunlight that hits the side of the roof with NO plants? Check out <a onclick=\"view.goToStep('1.4')\">here</a> for a hint. Then, revise your story below.",
+                                "studentAction": "revise"
+                            },
+                            {
+                                "concepts": "5",
+                                "score": "5",
+                                "feedbackText": "<br>{{studentFirstNames}}, great reasoning. <br><br>Now, check over your story to make sure it describes the energy flow from the sun to both sides of the roof. Revise as needed.",
+                                "studentAction": "revise"
+                            },
+                            {
+                                "concepts": "",
+                                "score": "0",
+                                "feedbackText": "<br>{{studentFirstNames}}, expand your story.<br><br>How does the energy change inside the chloroplast? Check out <a onclick=\"view.goToStep('3.2')\">here</a> for a hint. Then, revise your story below.",
+                                "studentAction": "revise"
+                            }
+                        ]
+                    }
+                }
+            ]
         }
     ],
     "constraints": [],
@@ -2918,5 +2989,7 @@
                 }
             ]
         }
-    ]
+    ],
+    "inactiveGroups": [],
+    "inactiveNodes": []
 }
