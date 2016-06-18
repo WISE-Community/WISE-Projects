@@ -48,7 +48,11 @@
                 "node17",
                 "node18",
                 "node19",
-                "node46"
+                "node46",
+                "node47",
+                "node48",
+                "node49",
+                "node50"
             ]
         },
         {
@@ -2751,9 +2755,56 @@
             "transitionLogic": {
                 "transitions": [
                     {
-                        "to": "node20"
+                        "to": "node47",
+                        "criteria": [
+                            {
+                                "name": "score",
+                                "params": {
+                                    "nodeId": "node46",
+                                    "componentId": "znco1zpt4n",
+                                    "scores": [
+                                        1,
+                                        2
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "to": "node48",
+                        "criteria": [
+                            {
+                                "name": "score",
+                                "params": {
+                                    "nodeId": "node46",
+                                    "componentId": "znco1zpt4n",
+                                    "scores": [
+                                        3
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "to": "node49",
+                        "criteria": [
+                            {
+                                "name": "score",
+                                "params": {
+                                    "nodeId": "node46",
+                                    "componentId": "znco1zpt4n",
+                                    "scores": [
+                                        4,
+                                        5
+                                    ]
+                                }
+                            }
+                        ]
                     }
-                ]
+                ],
+                "howToChooseAmongAvailablePaths": "random",
+                "whenToChoosePath": "scoreChanged",
+                "canChangePath": "false"
             },
             "showSaveButton": true,
             "showSubmitButton": false,
@@ -2771,6 +2822,8 @@
                         "itemType": "HENRY",
                         "itemId": "GREENROOF-II",
                         "scoreOn": "submit",
+                        "showScore": true,
+                        "showFeedback": true,
                         "scoringRules": [
                             {
                                 "concepts": "1",
@@ -2812,6 +2865,88 @@
                     }
                 }
             ]
+        },
+        {
+            "id": "node47",
+            "title": "Received Score 1 or 2",
+            "type": "node",
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node50"
+                    }
+                ]
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": [
+                {
+                    "id": "123bupsmpm",
+                    "type": "HTML",
+                    "html": "You received a 1 or 2."
+                }
+            ]
+        },
+        {
+            "id": "node48",
+            "title": "Received Score 3",
+            "type": "node",
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node50"
+                    }
+                ]
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": [
+                {
+                    "id": "cd0ursmwz6",
+                    "type": "HTML",
+                    "html": "You received a 3."
+                }
+            ]
+        },
+        {
+            "id": "node49",
+            "title": "Received Score 4 or 5",
+            "type": "node",
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node50"
+                    }
+                ]
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": [
+                {
+                    "id": "61dqycnwzh",
+                    "type": "HTML",
+                    "html": "You received a 4 or 5."
+                }
+            ]
+        },
+        {
+            "id": "node50",
+            "title": "Merge Step",
+            "type": "node",
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node20"
+                    }
+                ]
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": []
         }
     ],
     "constraints": [],
