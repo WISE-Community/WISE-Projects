@@ -1976,7 +1976,7 @@
                 ],
                 "howToChooseAmongAvailablePaths": null,
                 "whenToChoosePath": "enterNode",
-                "canChangePath": false,
+                "canChangePath": true,
                 "maxPathsVisitable": 1
             },
             "title": "Aggregate Step 2",
@@ -2388,7 +2388,7 @@
                 ],
                 "howToChooseAmongAvailablePaths": null,
                 "whenToChoosePath": "studentDataChanged",
-                "canChangePath": false,
+                "canChangePath": true,
                 "maxPathsVisitable": null
             },
             "showSaveButton": true,
@@ -2804,7 +2804,7 @@
                 ],
                 "howToChooseAmongAvailablePaths": "random",
                 "whenToChoosePath": "scoreChanged",
-                "canChangePath": "false"
+                "canChangePath": true
             },
             "showSaveButton": true,
             "showSubmitButton": false,
