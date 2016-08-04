@@ -48,6 +48,7 @@
                 "node17",
                 "node18",
                 "node19",
+                "node51",
                 "node46",
                 "node47",
                 "node48",
@@ -1539,7 +1540,7 @@
             "transitionLogic": {
                 "transitions": [
                     {
-                        "to": "node46"
+                        "to": "node51"
                     }
                 ],
                 "howToChooseAmongAvailablePaths": null,
@@ -2947,6 +2948,81 @@
             "showSaveButton": true,
             "showSubmitButton": false,
             "components": []
+        },
+        {
+            "id": "node51",
+            "title": "Concept Map",
+            "type": "node",
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node46"
+                    }
+                ]
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": [
+                {
+                    "id": "nbos081cz8",
+                    "type": "ConceptMap",
+                    "prompt": "<p>How is the Earth is warmed by energy?</p>\n<ul>\n<li>\n<p>Use all of the pictures on the left to show how energy moves between the Sun, the Earth (surface and below), and Space.</p>\n</li>\n<li>\n<p>Click on \"Submit Diagram\" to receive feedback.&nbsp; Try not to continue until you are told \"Great Job!\"</p>\n</li>\n</ul>",
+                    "showSaveButton": false,
+                    "showSubmitButton": false,
+                    "starterSentence": null,
+                    "isStudentAttachmentEnabled": false,
+                    "width": 800,
+                    "height": 600,
+                    "nodes": [
+                        {
+                            "name": "Sun",
+                            "fileName": "Sun.png",
+                            "width": 100,
+                            "height": 100
+                        },
+                        {
+                            "name": "Space",
+                            "fileName": "Space.png",
+                            "width": 100,
+                            "height": 100
+                        },
+                        {
+                            "name": "Earth's Surface",
+                            "fileName": "Earth_surface.png",
+                            "width": 100,
+                            "height": 100
+                        },
+                        {
+                            "name": "Beneath Earth",
+                            "fileName": "Earth_beneath.png",
+                            "width": 100,
+                            "height": 100
+                        },
+                        {
+                            "name": "Invisible Sun",
+                            "fileName": "InvisibleSun.png",
+                            "width": 100,
+                            "height": 100
+                        }
+                    ],
+                    "linksTitle": "Pick an energy type for your new link Pick an energy type for your new link",
+                    "linkTypes": [
+                        {
+                            "name": "Solar Radiation Solar Radiation Solar Radiation",
+                            "color": "#DDD266"
+                        },
+                        {
+                            "name": "Infrared Radiation",
+                            "color": "#B62467"
+                        },
+                        {
+                            "name": "Heat",
+                            "color": "#DE2D26"
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "constraints": [],
