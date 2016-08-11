@@ -2976,48 +2976,56 @@
                     "height": 600,
                     "nodes": [
                         {
-                            "name": "Sun",
+                            "id": "node1",
+                            "label": "Sun",
                             "fileName": "Sun.png",
                             "width": 100,
                             "height": 100
                         },
                         {
-                            "name": "Space",
+                            "id": "node2",
+                            "label": "Space",
                             "fileName": "Space.png",
                             "width": 100,
                             "height": 100
                         },
                         {
-                            "name": "Earth's Surface",
+                            "id": "node3",
+                            "label": "Earth's Surface",
                             "fileName": "Earth_surface.png",
                             "width": 100,
                             "height": 100
                         },
                         {
-                            "name": "Beneath Earth",
+                            "id": "node4",
+                            "label": "Beneath Earth",
                             "fileName": "Earth_beneath.png",
                             "width": 100,
                             "height": 100
                         },
                         {
-                            "name": "Invisible Sun",
+                            "id": "node5",
+                            "label": "Invisible Sun",
                             "fileName": "InvisibleSun.png",
                             "width": 100,
                             "height": 100
                         }
                     ],
-                    "linksTitle": "Pick an energy type for your new link Pick an energy type for your new link",
-                    "linkTypes": [
+                    "linksTitle": "Pick an energy type for your new link",
+                    "links": [
                         {
-                            "name": "Solar Radiation Solar Radiation Solar Radiation",
+                            "id": "link1",
+                            "label": "Solar Radiation",
                             "color": "#DDD266"
                         },
                         {
-                            "name": "Infrared Radiation",
+                            "id": "link2",
+                            "label": "Infrared Radiation",
                             "color": "#B62467"
                         },
                         {
-                            "name": "Heat",
+                            "id": "link3",
+                            "label": "Heat",
                             "color": "#DE2D26"
                         }
                     ]
