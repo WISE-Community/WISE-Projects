@@ -2830,19 +2830,52 @@
                                 "concepts": "1",
                                 "score": "1",
                                 "feedbackText": "<br>{{studentFirstNames}}, redo.<br><br> Think about the Sun’s rays. Where do they go? How do they move? Check out <a onclick=\"view.goToStep(' 2.1')\">here</a> for a hint. Then, rewrite your story below.",
-                                "studentAction": "revise"
+                                "studentAction": "revise",
+								"notifications": [
+								                    {
+								                        "notificationType": "CRaterResult",
+								                        "isAmbient": true,
+								                        "dismissCode": "apple",
+								                        "isNotifyTeacher": true,
+								                        "isNotifyStudent": true,
+								                        "notificationMessageToStudent": "1. Please talk to your teacher about this CRater item!",
+								                        "notificationMessageToTeacher": "1. Student received score of {{score}}. Requires dismissal with code {{dismissCode}}."
+								                    }
+								                ]												
                             },
                             {
                                 "concepts": "2",
                                 "score": "2",
                                 "feedbackText": "<br>{{studentFirstNames}}, expand your story. <br><br>How does the energy change inside the chloroplast? Check out <a onclick=\"view.goToStep('3.2')\">here</a> for a hint. Then, revise your story below.",
-                                "studentAction": "revise"
+                                "studentAction": "revise",
+								"notifications": [
+								                    {
+								                        "notificationType": "CRaterResult",
+								                        "isAmbient": true,
+								                        "dismissCode": "apple",
+								                        "isNotifyTeacher": true,
+								                        "isNotifyStudent": true,
+								                        "notificationMessageToStudent": "2. Please talk to your teacher about this CRater item!",
+								                        "notificationMessageToTeacher": "2. Student received score of {{score}}. Requires dismissal with code {{dismissCode}}."
+								                    }
+								                ]								
                             },
                             {
                                 "concepts": "3",
                                 "score": "3",
                                 "feedbackText": "<br>{{studentFirstNames}}, expand your story.<br><br>How does the energy change inside the chloroplast? Check out <a onclick=\"view.goToStep('3.2')\">here</a> for a hint. Then, revise your story below.",
-                                "studentAction": "revise"
+                                "studentAction": "revise",
+				                "notifications": [
+				                    {
+				                        "notificationType": "CRaterResult",
+				                        "isAmbient": true,
+				                        "dismissCode": "apple",
+				                        "isNotifyTeacher": true,
+				                        "isNotifyStudent": true,
+				                        "notificationMessageToStudent": "3. Please talk to your teacher about this CRater item!",
+				                        "notificationMessageToTeacher": "3. Student received score of {{score}}. Requires dismissal with code {{dismissCode}}."
+				                    }
+				                ]								
                             },
                             {
                                 "concepts": "4",
