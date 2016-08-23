@@ -3064,6 +3064,33 @@
                             "color": "#DDD266"
                         }
                     ],
+                    "rules": [
+                        {
+                            "name": "Contains Sun",
+                            "type": "node",
+                            "category": "",
+                            "nodeLabel": "Sun",
+                            "comparison": "exactly",
+                            "number": 1
+                        },
+                        {
+                            "name": "Contains Space",
+                            "type": "node",
+                            "category": "",
+                            "nodeLabel": "Space",
+                            "comparison": "exactly",
+                            "number": 1
+                        },
+                        {
+                            "name": "Sun (SR) Space",
+                            "type": "link",
+                            "nodeLabel": "Sun",
+                            "linkLabel": "Solar Radiation",
+                            "otherNodeLabel": "Space",
+                            "comparison": "exactly",
+                            "number": 1
+                        }
+                    ],
                     "showPreviousWorkPrompt": false,
                     "starterConceptMap": {
                         "nodes": [
@@ -3080,15 +3107,18 @@
                                 "outgoingLinks": [
                                     {
                                         "originalId": "link1",
-                                        "instanceId": "studentLink1"
+                                        "instanceId": "studentLink1",
+                                        "label": "Infrared Radiation"
                                     },
                                     {
                                         "originalId": "link2",
-                                        "instanceId": "studentLink2"
+                                        "instanceId": "studentLink2",
+                                        "label": "Heat"
                                     },
                                     {
                                         "originalId": "link3",
-                                        "instanceId": "studentLink3"
+                                        "instanceId": "studentLink3",
+                                        "label": "Solar Radiation"
                                     }
                                 ],
                                 "incomingLinks": []
@@ -3107,17 +3137,33 @@
                                 "incomingLinks": [
                                     {
                                         "originalId": "link1",
-                                        "instanceId": "studentLink1"
+                                        "instanceId": "studentLink1",
+                                        "label": "Infrared Radiation"
                                     },
                                     {
                                         "originalId": "link2",
-                                        "instanceId": "studentLink2"
+                                        "instanceId": "studentLink2",
+                                        "label": "Heat"
                                     },
                                     {
                                         "originalId": "link3",
-                                        "instanceId": "studentLink3"
+                                        "instanceId": "studentLink3",
+                                        "label": "Solar Radiation"
                                     }
                                 ]
+                            },
+                            {
+                                "originalId": "node4",
+                                "instanceId": "studentNode3",
+                                "fileName": "Earth_beneath.png",
+                                "filePath": "/wise/curriculum/108/assets/Earth_beneath.png",
+                                "label": "Beneath the Surface of the Earth",
+                                "x": 323,
+                                "y": 405,
+                                "width": 100,
+                                "height": 100,
+                                "outgoingLinks": [],
+                                "incomingLinks": []
                             }
                         ],
                         "links": [
@@ -3131,8 +3177,10 @@
                                 "endCurveUp": true,
                                 "sourceNodeOriginalId": "node1",
                                 "sourceNodeInstanceId": "studentNode1",
+                                "sourceNodeLabel": "Sun",
                                 "destinationNodeOriginalId": "node2",
-                                "destinationNodeInstanceId": "studentNode2"
+                                "destinationNodeInstanceId": "studentNode2",
+                                "destinationNodeLabel": "Space"
                             },
                             {
                                 "originalId": "link2",
@@ -3144,8 +3192,10 @@
                                 "endCurveUp": false,
                                 "sourceNodeOriginalId": "node1",
                                 "sourceNodeInstanceId": "studentNode1",
+                                "sourceNodeLabel": "Sun",
                                 "destinationNodeOriginalId": "node2",
-                                "destinationNodeInstanceId": "studentNode2"
+                                "destinationNodeInstanceId": "studentNode2",
+                                "destinationNodeLabel": "Space"
                             },
                             {
                                 "originalId": "link3",
@@ -3157,11 +3207,16 @@
                                 "endCurveUp": false,
                                 "sourceNodeOriginalId": "node1",
                                 "sourceNodeInstanceId": "studentNode1",
+                                "sourceNodeLabel": "Sun",
                                 "destinationNodeOriginalId": "node2",
-                                "destinationNodeInstanceId": "studentNode2"
+                                "destinationNodeInstanceId": "studentNode2",
+                                "destinationNodeLabel": "Space"
                             }
                         ]
-                    }
+                    },
+                    "customRuleEvaluator": "var result = {};\n\nif (all(\"Contains Sun\", \"Sun (SR) Space\", \"Contains Space\")) {\n    result.score = 3;\n    result.feedback = \"Good Job\";\n} else if (all(\"Contains Sun\") && any(\"Contains Space\")) {\n    result.score = 2;\n    result.feedback = \"Missing Link\";\n} else if (any(\"Contains Sun\")) {\n    result.score = 1;\n    result.feedback = \"Missing Space\";\n} else if (any(\"Contains Space\")) {\n    result.score = 1;\n    result.feedback = \"Missing Sun\";\n} else {\n    result.score = 0;\n    result.feedback = \"Missing Everything\";\n}\n\nsetResult(result);",
+                    "showPreviousWorkNodeId": "",
+                    "showPreviousWorkComponentId": ""
                 }
             ]
         }
