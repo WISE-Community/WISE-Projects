@@ -50,6 +50,7 @@
                 "node19",
                 "node51",
                 "node46",
+                "node52",
                 "node47",
                 "node48",
                 "node49",
@@ -2756,51 +2757,7 @@
             "transitionLogic": {
                 "transitions": [
                     {
-                        "to": "node47",
-                        "criteria": [
-                            {
-                                "name": "score",
-                                "params": {
-                                    "nodeId": "node46",
-                                    "componentId": "znco1zpt4n",
-                                    "scores": [
-                                        1,
-                                        2
-                                    ]
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "to": "node48",
-                        "criteria": [
-                            {
-                                "name": "score",
-                                "params": {
-                                    "nodeId": "node46",
-                                    "componentId": "znco1zpt4n",
-                                    "scores": [
-                                        3
-                                    ]
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "to": "node49",
-                        "criteria": [
-                            {
-                                "name": "score",
-                                "params": {
-                                    "nodeId": "node46",
-                                    "componentId": "znco1zpt4n",
-                                    "scores": [
-                                        4,
-                                        5
-                                    ]
-                                }
-                            }
-                        ]
+                        "to": "node52"
                     }
                 ],
                 "howToChooseAmongAvailablePaths": "random",
@@ -2831,51 +2788,51 @@
                                 "score": "1",
                                 "feedbackText": "<br>{{studentFirstNames}}, redo.<br><br> Think about the Sun’s rays. Where do they go? How do they move? Check out <a onclick=\"view.goToStep(' 2.1')\">here</a> for a hint. Then, rewrite your story below.",
                                 "studentAction": "revise",
-								"notifications": [
-								                    {
-								                        "notificationType": "CRaterResult",
-								                        "isAmbient": true,
-								                        "dismissCode": "apple",
-								                        "isNotifyTeacher": true,
-								                        "isNotifyStudent": true,
-								                        "notificationMessageToStudent": "1. Please talk to your teacher about this CRater item!",
-								                        "notificationMessageToTeacher": "1. Student received score of {{score}}. Requires dismissal with code {{dismissCode}}."
-								                    }
-								                ]												
+                                "notifications": [
+                                    {
+                                        "notificationType": "CRaterResult",
+                                        "isAmbient": true,
+                                        "dismissCode": "apple",
+                                        "isNotifyTeacher": true,
+                                        "isNotifyStudent": true,
+                                        "notificationMessageToStudent": "1. Please talk to your teacher about this CRater item!",
+                                        "notificationMessageToTeacher": "1. Student received score of {{score}}. Requires dismissal with code {{dismissCode}}."
+                                    }
+                                ]
                             },
                             {
                                 "concepts": "2",
                                 "score": "2",
                                 "feedbackText": "<br>{{studentFirstNames}}, expand your story. <br><br>How does the energy change inside the chloroplast? Check out <a onclick=\"view.goToStep('3.2')\">here</a> for a hint. Then, revise your story below.",
                                 "studentAction": "revise",
-								"notifications": [
-								                    {
-								                        "notificationType": "CRaterResult",
-								                        "isAmbient": true,
-								                        "dismissCode": "apple",
-								                        "isNotifyTeacher": true,
-								                        "isNotifyStudent": true,
-								                        "notificationMessageToStudent": "2. Please talk to your teacher about this CRater item!",
-								                        "notificationMessageToTeacher": "2. Student received score of {{score}}. Requires dismissal with code {{dismissCode}}."
-								                    }
-								                ]								
+                                "notifications": [
+                                    {
+                                        "notificationType": "CRaterResult",
+                                        "isAmbient": true,
+                                        "dismissCode": "apple",
+                                        "isNotifyTeacher": true,
+                                        "isNotifyStudent": true,
+                                        "notificationMessageToStudent": "2. Please talk to your teacher about this CRater item!",
+                                        "notificationMessageToTeacher": "2. Student received score of {{score}}. Requires dismissal with code {{dismissCode}}."
+                                    }
+                                ]
                             },
                             {
                                 "concepts": "3",
                                 "score": "3",
                                 "feedbackText": "<br>{{studentFirstNames}}, expand your story.<br><br>How does the energy change inside the chloroplast? Check out <a onclick=\"view.goToStep('3.2')\">here</a> for a hint. Then, revise your story below.",
                                 "studentAction": "revise",
-				                "notifications": [
-				                    {
-				                        "notificationType": "CRaterResult",
-				                        "isAmbient": true,
-				                        "dismissCode": "apple",
-				                        "isNotifyTeacher": true,
-				                        "isNotifyStudent": true,
-				                        "notificationMessageToStudent": "3. Please talk to your teacher about this CRater item!",
-				                        "notificationMessageToTeacher": "3. Student received score of {{score}}. Requires dismissal with code {{dismissCode}}."
-				                    }
-				                ]								
+                                "notifications": [
+                                    {
+                                        "notificationType": "CRaterResult",
+                                        "isAmbient": true,
+                                        "dismissCode": "apple",
+                                        "isNotifyTeacher": true,
+                                        "isNotifyStudent": true,
+                                        "notificationMessageToStudent": "3. Please talk to your teacher about this CRater item!",
+                                        "notificationMessageToTeacher": "3. Student received score of {{score}}. Requires dismissal with code {{dismissCode}}."
+                                    }
+                                ]
                             },
                             {
                                 "concepts": "4",
@@ -2896,7 +2853,8 @@
                                 "studentAction": "revise"
                             }
                         ]
-                    }
+                    },
+                    "enableCRater": true
                 }
             ]
         },
@@ -3217,6 +3175,161 @@
                     "customRuleEvaluator": "var result = {};\n\nif (all(\"Contains Sun\", \"Sun (SR) Space\", \"Contains Space\")) {\n    result.score = 3;\n    result.feedback = \"Good Job\";\n} else if (all(\"Contains Sun\") && any(\"Contains Space\")) {\n    result.score = 2;\n    result.feedback = \"Missing Link\";\n} else if (any(\"Contains Sun\")) {\n    result.score = 1;\n    result.feedback = \"Missing Space\";\n} else if (any(\"Contains Space\")) {\n    result.score = 1;\n    result.feedback = \"Missing Sun\";\n} else {\n    result.score = 0;\n    result.feedback = \"Missing Everything\";\n}\n\nsetResult(result);",
                     "showPreviousWorkNodeId": "",
                     "showPreviousWorkComponentId": ""
+                }
+            ]
+        },
+        {
+            "id": "node52",
+            "title": "CRater Multiple Attempt",
+            "type": "node",
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node47",
+                        "criteria": [
+                            {
+                                "name": "score",
+                                "params": {
+                                    "nodeId": "node46",
+                                    "componentId": "znco1zpt4n",
+                                    "scores": [
+                                        1,
+                                        2
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "to": "node48",
+                        "criteria": [
+                            {
+                                "name": "score",
+                                "params": {
+                                    "nodeId": "node46",
+                                    "componentId": "znco1zpt4n",
+                                    "scores": [
+                                        3
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "to": "node49",
+                        "criteria": [
+                            {
+                                "name": "score",
+                                "params": {
+                                    "nodeId": "node46",
+                                    "componentId": "znco1zpt4n",
+                                    "scores": [
+                                        4,
+                                        5
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": [
+                {
+                    "id": "8f287moaq1",
+                    "type": "OpenResponse",
+                    "prompt": "GREENROOF-II\n<br/><br/>\n5 points\n<br/>\nThe plants get the light energy from the sun and transform the energy to a new kind of energy called chemical energy. Also carbon dioxide, water, and the light energy come together and make the plants food, a sugar named glucose. They say that glucose is so energy rich because the light energy that was turned into chemical energy can be stored int the glucose for later and thats why these people have plants growing on there roof.\n<br/><br/>\n4 points\n<br/>\nThe energy comes from the sun and the energy transfers from place to place by bouncing off one another. The energy goes into the plant and is stored and is stored as chemical energy. Energy changes from light energy to chemical energy by the other energy's together..\n<br/><br/>\n3 points\n<br/>\nenergy comes from pre-existing energy that transforms, energy is stored in molecules. Energy explodes and the chemicals inside change.\n<br/><br/>\n2 points\n<br/>\nit would lower the energy use because it goes t the plants before it gets to the building\n<br/><br/>\n1 point\n<br/>\nhello",
+                    "showSaveButton": false,
+                    "showSubmitButton": true,
+                    "starterSentence": null,
+                    "isStudentAttachmentEnabled": false,
+                    "maxScore": 5,
+                    "cRater": {
+                        "itemId": "GREENROOF-II",
+                        "scoreOn": "submit",
+                        "showScore": false,
+                        "showFeedback": true,
+                        "scoringRules": [
+                            {
+                                "concepts": "1",
+                                "score": "1",
+                                "feedbackText": "<br>{{studentFirstNames}}, redo.<br><br> Think about the Sun’s rays. Where do they go? How do they move? Check out <a onclick=\"view.goToStep(' 2.1')\">here</a> for a hint. Then, rewrite your story below.",
+                                "studentAction": "revise"
+                            },
+                            {
+                                "concepts": "2",
+                                "score": "2",
+                                "feedbackText": "<br>{{studentFirstNames}}, expand your story. <br><br>How does the energy change inside the chloroplast? Check out <a onclick=\"view.goToStep('3.2')\">here</a> for a hint. Then, revise your story below.",
+                                "studentAction": "revise"
+                            },
+                            {
+                                "concepts": "3",
+                                "score": "3",
+                                "feedbackText": "<br>{{studentFirstNames}}, expand your story.<br><br>How does the energy change inside the chloroplast? Check out <a onclick=\"view.goToStep('3.2')\">here</a> for a hint. Then, revise your story below.",
+                                "studentAction": "revise"
+                            },
+                            {
+                                "concepts": "4",
+                                "score": "4",
+                                "feedbackText": "<br>{{studentFirstNames}}, good progress. Now expand your story. <br><br>Why are the plants important - what would happen to sunlight that hits the side of the roof with NO plants? Check out <a onclick=\"view.goToStep('1.4')\">here</a> for a hint. Then, revise your story below.",
+                                "studentAction": "revise"
+                            },
+                            {
+                                "concepts": "5",
+                                "score": "5",
+                                "feedbackText": "<br>{{studentFirstNames}}, great reasoning. <br><br>Now, check over your story to make sure it describes the energy flow from the sun to both sides of the roof. Revise as needed.",
+                                "studentAction": "revise"
+                            },
+                            {
+                                "concepts": "",
+                                "score": "0",
+                                "feedbackText": "<br>{{studentFirstNames}}, expand your story.<br><br>How does the energy change inside the chloroplast? Check out <a onclick=\"view.goToStep('3.2')\">here</a> for a hint. Then, revise your story below.",
+                                "studentAction": "revise"
+                            }
+                        ],
+                        "enableMultipleAttemptScoringRules": true,
+                        "multipleAttemptScoringRules": [
+                            {
+                                "scoreSequence": [
+                                    "1-3, 5",
+                                    "4"
+                                ],
+                                "feedbackText": "Good progress. Now add information. How will plants lower the house’s energy use? Think about what happens to sunlight that hits the side of the roof with NO plants? Check out <a style=\"color:blue; cursor:pointer\" onclick=\"view.getCurrentNode().linkTo('1yuywe42O4')\">Step 2.3</a> for a hint. Then, add to your explanation below."
+                            },
+                            {
+                                "scoreSequence": [
+                                    "4",
+                                    "4"
+                                ],
+                                "feedbackText": "You are on the right track. Add details. Contrast what happens to light energy when it hits a dark roof to when light energy hits the plants. Hint: Slow down the model in <a style=\"color:blue; cursor:pointer\" onclick=\"view.getCurrentNode().linkTo('1yuywe42O4')\">Step 2.3</a> and watch a few sunrays. Then, add to your explanation below."
+                            },
+                            {
+                                "scoreSequence": [
+                                    "1-4",
+                                    "5"
+                                ],
+                                "feedbackText": "Great job! Now think about this. If Brent and Emilio’s house was in a shady spot where it did not get much sunlight, what would be a better approach to reduce energy use...grow plants on the roof or not? Add to your explanation below."
+                            },
+                            {
+                                "scoreSequence": [
+                                    "5",
+                                    "5"
+                                ],
+                                "feedbackText": "Nice work. You are a superstar!"
+                            },
+                            {
+                                "scoreSequence": [
+                                    "0-5",
+                                    "0-3"
+                                ],
+                                "feedbackText": "TALK TO YOUR TEACHER to help you take your answer further. The top bar of your screen is now red so your teacher knows to come talk to you."
+                            }
+                        ],
+                        "itemType": "CRATER"
+                    },
+                    "enableCRater": true
                 }
             ]
         }
