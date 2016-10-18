@@ -3204,13 +3204,13 @@
                     "isStudentAttachmentEnabled": false,
                     "width": 800,
                     "height": 600,
-                    "background": "Nickelodeon_SpongeBob_SquarePants_Characters_Cast.png",
+                    "background": "Nickelodeon_SpongeBob_SquarePants_Characters_Cast.jpg",
                     "stretchBackground": true,
                     "nodes": [
                         {
                             "id": "node1",
-                            "label": "Sun",
-                            "fileName": "Sun.png",
+                            "label": "sun",
+                            "fileName": "sun.png",
                             "width": 100,
                             "height": 100
                         },
@@ -3411,9 +3411,7 @@
                             }
                         ]
                     },
-                    "customRuleEvaluator": "var result = {};\n\nif (all(\"Contains Sun\", \"Sun (SR) Space\", \"Contains Space\")) {\n    result.score = 3;\n    result.feedback = \"Good Job\";\n} else if (all(\"Contains Sun\") && any(\"Contains Space\")) {\n    result.score = 2;\n    result.feedback = \"Missing Link\";\n} else if (any(\"Contains Sun\")) {\n    result.score = 1;\n    result.feedback = \"Missing Space\";\n} else if (any(\"Contains Space\")) {\n    result.score = 1;\n    result.feedback = \"Missing Sun\";\n} else {\n    result.score = 0;\n    result.feedback = \"Missing Everything\";\n}\n\nsetResult(result);",
-                    "showPreviousWorkNodeId": "",
-                    "showPreviousWorkComponentId": ""
+                    "customRuleEvaluator": "var result = {};\n\nif (all(\"Contains Sun\", \"Sun (SR) Space\", \"Contains Space\")) {\n    result.score = 3;\n    result.feedback = \"Good Job\";\n} else if (all(\"Contains Sun\") && any(\"Contains Space\")) {\n    result.score = 2;\n    result.feedback = \"Missing Link\";\n} else if (any(\"Contains Sun\")) {\n    result.score = 1;\n    result.feedback = \"Missing Space\";\n} else if (any(\"Contains Space\")) {\n    result.score = 1;\n    result.feedback = \"Missing Sun\";\n} else {\n    result.score = 0;\n    result.feedback = \"Missing Everything\";\n}\n\nsetResult(result);"
                 }
             ]
         },
