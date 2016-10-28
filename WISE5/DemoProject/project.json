@@ -50,6 +50,7 @@
                 "node18",
                 "node19",
                 "node51",
+                "node54",
                 "node46",
                 "node52",
                 "node47",
@@ -3187,7 +3188,7 @@
             "transitionLogic": {
                 "transitions": [
                     {
-                        "to": "node46"
+                        "to": "node54"
                     }
                 ]
             },
@@ -3677,6 +3678,68 @@
                         "itemType": "CRATER"
                     },
                     "enableCRater": true
+                }
+            ]
+        },
+        {
+            "id": "node54",
+            "title": "Carrot Model",
+            "type": "node",
+            "constraints": [],
+            "transitionLogic": {
+                "transitions": [
+                    {
+                        "to": "node46"
+                    }
+                ]
+            },
+            "showSaveButton": true,
+            "showSubmitButton": false,
+            "components": [
+                {
+                    "id": "yo6qlvcg3u",
+                    "type": "OpenResponse",
+                    "prompt": "Where does the plant store glucose?",
+                    "showSaveButton": false,
+                    "showSubmitButton": true,
+                    "starterSentence": null,
+                    "isStudentAttachmentEnabled": false
+                },
+                {
+                    "id": "17qww5dxhs",
+                    "type": "MultipleChoice",
+                    "prompt": "What will happen to the plant if the light is turned off for too long?",
+                    "showSaveButton": false,
+                    "showSubmitButton": true,
+                    "choiceType": "radio",
+                    "choices": [
+                        {
+                            "id": "h2qmc80n5m",
+                            "text": "The plant will grow",
+                            "feedback": "",
+                            "isCorrect": false
+                        },
+                        {
+                            "id": "ic3ebdovo2",
+                            "text": "The plant will die",
+                            "feedback": "",
+                            "isCorrect": false
+                        },
+                        {
+                            "id": "1l0yjcccot",
+                            "text": "The plant will explode",
+                            "feedback": "",
+                            "isCorrect": false
+                        }
+                    ],
+                    "showFeedback": true
+                },
+                {
+                    "id": "oxv14ib3md",
+                    "type": "Embedded",
+                    "url": "carrot/carrot.html",
+                    "showSaveButton": false,
+                    "showSubmitButton": false
                 }
             ]
         }
