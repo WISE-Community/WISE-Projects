@@ -2755,69 +2755,40 @@
             "id": "node46",
             "title": "CRater",
             "type": "node",
-            "constraints": [],
+            "constraints": [
+                {
+                    "id": "node46Constraint1",
+                    "action": "makeAllNodesAfterThisNotVisitable",
+                    "targetId": "node46",
+                    "removalConditional": "all",
+                    "removalCriteria": [
+                        {
+                            "name": "isCompleted",
+                            "params": {
+                                "nodeId": "node46"
+                            }
+                        }
+                    ]
+                }
+            ],
             "transitionLogic": {
                 "transitions": [
                     {
-                        "to": "node47",
-                        "criteria": [
-                            {
-                                "name": "score",
-                                "params": {
-                                    "nodeId": "node46",
-                                    "componentId": "znco1zpt4n",
-                                    "scores": [
-                                        1,
-                                        2
-                                    ]
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "to": "node48",
-                        "criteria": [
-                            {
-                                "name": "score",
-                                "params": {
-                                    "nodeId": "node46",
-                                    "componentId": "znco1zpt4n",
-                                    "scores": [
-                                        3
-                                    ]
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "to": "node49",
-                        "criteria": [
-                            {
-                                "name": "score",
-                                "params": {
-                                    "nodeId": "node46",
-                                    "componentId": "znco1zpt4n",
-                                    "scores": [
-                                        4,
-                                        5
-                                    ]
-                                }
-                            }
-                        ]
+                        "to": "node52"
                     }
                 ],
                 "howToChooseAmongAvailablePaths": "random",
                 "whenToChoosePath": "scoreChanged",
                 "canChangePath": true
             },
-            "showSaveButton": true,
+            "showSaveButton": false,
             "showSubmitButton": false,
             "components": [
                 {
                     "id": "znco1zpt4n",
                     "type": "OpenResponse",
-                    "prompt": "GREENROOF-II\n<br/><br/>\n5 points\n<br/>\nThe plants get the light energy from the sun and transform the energy to a new kind of energy called chemical energy. Also carbon dioxide, water, and the light energy come together and make the plants food, a sugar named glucose. They say that glucose is so energy rich because the light energy that was turned into chemical energy can be stored int the glucose for later and thats why these people have plants growing on there roof.\n<br/><br/>\n4 points\n<br/>\nThe energy comes from the sun and the energy transfers from place to place by bouncing off one another. The energy goes into the plant and is stored and is stored as chemical energy. Energy changes from light energy to chemical energy by the other energy's together..\n<br/><br/>\n3 points\n<br/>\nenergy comes from pre-existing energy that transforms, energy is stored in molecules. Energy explodes and the chemicals inside change.\n<br/><br/>\n2 points\n<br/>\nit would lower the energy use because it goes t the plants before it gets to the building\n<br/><br/>\n1 point\n<br/>\nhello",
-                    "showSaveButton": false,
+                    "prompt": "GREENROOF-II\n<br/><br/>\n5 points\n<br/>\nThe plants get the light energy from the sun and transform the energy to a new kind of energy called chemical energy. Also carbon dioxide, water, and the light energy come together and make the plants food, a sugar named glucose. They say that glucose is so energy rich because the light energy that was turned into chemical energy can be stored int the glucose for later and thats why these people have plants growing on there roof.\n<br/><br/>\n4 points\n<br/>\nThe energy comes from the sun and the energy transfers from place to place by bouncing off one another. The energy goes into the plant and is stored and is stored as chemical energy. Energy changes from light energy to chemical energy by the other energy's together..\n<br/><br/>\n3 points\n<br/>\nenergy comes from pre-existing energy that transforms, energy is stored in molecules. Energy explodes and the chemicals inside change.\n<br/><br/>\n2 points\n<br/>\nit would lower the energy use because it goes t the plants before it gets to the building\n<br/><br/>\n1 point\n<br/>\nhello\n<br/>\n<br/>\n<br/>\nNote: To complete this step you need to submit this component twice, visit <wiselink node-id='node2' link-text='Step 1.2'></wiselink>, then save this component.",
+                    "showSaveButton": true,
                     "showSubmitButton": true,
                     "starterSentence": null,
                     "isStudentAttachmentEnabled": false,
@@ -2985,6 +2956,30 @@
                                 "studentAction": "revise"
                             }
                         ]
+                    },
+                    "completionCriteria": {
+                        "inOrder": true,
+                        "criteria": [
+                            {
+                                "name": "isSubmitted",
+                                "nodeId": "node46",
+                                "componentId": "znco1zpt4n"
+                            },
+                            {
+                                "name": "isSubmitted",
+                                "nodeId": "node46",
+                                "componentId": "znco1zpt4n"
+                            },
+                            {
+                                "name": "isVisited",
+                                "nodeId": "node2"
+                            },
+                            {
+                                "name": "isSaved",
+                                "nodeId": "node46",
+                                "componentId": "znco1zpt4n"
+                            }
+                        ]
                     }
                 }
             ]
@@ -2997,7 +2992,51 @@
             "transitionLogic": {
                 "transitions": [
                     {
-                        "to": "node52"
+                        "to": "node47",
+                        "criteria": [
+                            {
+                                "name": "score",
+                                "params": {
+                                    "nodeId": "node46",
+                                    "componentId": "znco1zpt4n",
+                                    "scores": [
+                                        1,
+                                        2
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "to": "node48",
+                        "criteria": [
+                            {
+                                "name": "score",
+                                "params": {
+                                    "nodeId": "node46",
+                                    "componentId": "znco1zpt4n",
+                                    "scores": [
+                                        3
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "to": "node49",
+                        "criteria": [
+                            {
+                                "name": "score",
+                                "params": {
+                                    "nodeId": "node46",
+                                    "componentId": "znco1zpt4n",
+                                    "scores": [
+                                        4,
+                                        5
+                                    ]
+                                }
+                            }
+                        ]
                     }
                 ],
                 "howToChooseAmongAvailablePaths": "random",
